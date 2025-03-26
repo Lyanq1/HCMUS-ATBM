@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\visual studio community\\Project Location\\TestDB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual studio community\\project location\\testdb\\testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|D:\\visual studio community\\Project Location\\TestDB\\testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|solutionrelative:testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual studio community\\project location\\testdb\\testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|D:\\visual studio community\\Project Location\\TestDB\\testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|solutionrelative:testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
+              "RelativeDocumentMoniker": "TestDB\\Form1.cs",
+              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
+              "RelativeToolTip": "TestDB\\Form1.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwBwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:13:21.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
+              "RelativeDocumentMoniker": "TestDB\\Form1.cs",
+              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs [Design]",
+              "RelativeToolTip": "TestDB\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:45:43.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
+              "RelativeDocumentMoniker": "TestDB\\Form1.cs",
+              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
+              "RelativeToolTip": "TestDB\\Form1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA3wBwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:09:18.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Program.cs",
+              "RelativeDocumentMoniker": "TestDB\\Program.cs",
+              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Program.cs",
+              "RelativeToolTip": "TestDB\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:09:13.192Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
