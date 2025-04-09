@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\visual studio community\\Project Location\\TestDB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual studio community\\project location\\testdb\\testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual studio community\\project location\\testdb\\testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|D:\\visual studio community\\Project Location\\TestDB\\testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|solutionrelative:testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual studio community\\Project Location\\TestDB\\testdb\\dbaui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dbaui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual studio community\\project location\\testdb\\testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|D:\\visual studio community\\Project Location\\TestDB\\testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\TestDB.csproj|solutionrelative:testdb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual studio community\\Project Location\\TestDB\\testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
-              "RelativeDocumentMoniker": "TestDB\\Form1.cs",
-              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
-              "RelativeToolTip": "TestDB\\Form1.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwBwAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DBAUI.cs [Design]",
+              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\DBAUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\DBAUI.cs",
+              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\DBAUI.cs [Design]*",
+              "RelativeToolTip": "TestDB\\DBAUI.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T16:13:21.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
-              "RelativeDocumentMoniker": "TestDB\\Form1.cs",
-              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs [Design]",
-              "RelativeToolTip": "TestDB\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:45:43.877Z"
+              "WhenOpened": "2025-03-28T03:25:30.884Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
-              "RelativeDocumentMoniker": "TestDB\\Form1.cs",
-              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Form1.cs",
-              "RelativeToolTip": "TestDB\\Form1.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA3wBwAAAAvAAAAAAAAAA==",
+              "Title": "DBAUI.Designer.cs",
+              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\DBAUI.Designer.cs",
+              "RelativeDocumentMoniker": "TestDB\\DBAUI.Designer.cs",
+              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\DBAUI.Designer.cs",
+              "RelativeToolTip": "TestDB\\DBAUI.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA4CAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:09:18.323Z"
+              "WhenOpened": "2025-03-28T03:18:19.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Program.cs",
-              "RelativeDocumentMoniker": "TestDB\\Program.cs",
-              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\Program.cs",
-              "RelativeToolTip": "TestDB\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DBAUI.cs",
+              "DocumentMoniker": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\DBAUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\DBAUI.cs",
+              "ToolTip": "D:\\visual studio community\\Project Location\\TestDB\\TestDB\\DBAUI.cs*",
+              "RelativeToolTip": "TestDB\\DBAUI.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wDsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:09:13.192Z",
+              "WhenOpened": "2025-03-28T03:17:23.971Z",
               "EditorCaption": ""
             }
           ]

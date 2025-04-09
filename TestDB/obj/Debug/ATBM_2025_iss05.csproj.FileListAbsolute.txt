@@ -30,10 +30,11 @@ D:\visual studio community\Project Location\TestDB\TestDB\bin\Debug\System.Text.
 D:\visual studio community\Project Location\TestDB\TestDB\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\visual studio community\Project Location\TestDB\TestDB\bin\Debug\System.ValueTuple.xml
 D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\ATBM_2025_iss05.csproj.AssemblyReference.cache
-D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\TestDB.Form1.resources
 D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\TestDB.Properties.Resources.resources
 D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\ATBM_2025_iss05.csproj.GenerateResource.cache
 D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\ATBM_2025_iss05.csproj.CoreCompileInputs.cache
 D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\ATBM_202.05BCC742.Up2Date
 D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\TestDB.exe
 D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\TestDB.pdb
+D:\visual studio community\Project Location\TestDB\TestDB\bin\Debug\FontAwesome.Sharp.dll
+D:\visual studio community\Project Location\TestDB\TestDB\obj\Debug\TestDB.DBAUI.resources
