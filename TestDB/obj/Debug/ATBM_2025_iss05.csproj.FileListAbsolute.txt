@@ -78,3 +78,46 @@ D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\ATBM_2025_is
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\ATBM_202.05BCC742.Up2Date
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.exe
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.pdb
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\TestDB.exe
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\TestDB.exe.config
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Buffers.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Formats.Asn1.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Memory.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Text.Json.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.ValueTuple.dll
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Buffers.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Formats.Asn1.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Memory.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Text.Json.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\System.ValueTuple.xml
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\ATBM_2025_iss05.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\TestDB.DBAUI.resources
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\TestDB.InputBox.resources
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\TestDB.LoginForm.resources
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\TestDB.Properties.Resources.resources
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\TestDB.RBAC.resources
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\ATBM_2025_iss05.csproj.GenerateResource.cache
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\ATBM_2025_iss05.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\ATBM_202.05BCC742.Up2Date
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\TestDB.exe
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\obj\Debug\TestDB.pdb
+C:\Users\ADMIN\Source\Repos\HCMUS-ATBM-10-\TestDB\bin\Debug\TestDB.pdb
