@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -98,6 +98,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateEditUserRoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEditUserRoleForm.Designer.cs">
+      <DependentUpon>CreateEditUserRoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseHelper.cs" />
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +116,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GrantRevokeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantRevokeForm.Designer.cs">
+      <DependentUpon>GrantRevokeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermissionInfoForm.Designer.cs">
+      <DependentUpon>PermissionInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TTNhanVien.Designer.cs">
@@ -116,8 +135,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TTNhanVien.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateEditUserRoleForm.resx">
+      <DependentUpon>CreateEditUserRoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseHelper.resx">
+      <DependentUpon>DatabaseHelper.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantRevokeForm.resx">
+      <DependentUpon>GrantRevokeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermissionInfoForm.resx">
+      <DependentUpon>PermissionInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
