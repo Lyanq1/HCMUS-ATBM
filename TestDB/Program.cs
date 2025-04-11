@@ -16,7 +16,7 @@ namespace TestDB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DBAUI());
+            Application.Run(new LoginForm()); // Thay đổi từ DBAUI sang LoginForm
         }
     }
 }

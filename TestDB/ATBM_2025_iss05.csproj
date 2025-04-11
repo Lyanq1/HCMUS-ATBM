@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -105,11 +105,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateEditUserRoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEditUserRoleForm.Designer.cs">
+      <DependentUpon>CreateEditUserRoleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DBAUI.Designer.cs">
       <DependentUpon>DBAUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMommonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMommonForm.Designer.cs">
+      <DependentUpon>EditMommonForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditRole.cs">
       <SubType>Form</SubType>
@@ -117,10 +129,61 @@
     <Compile Include="EditRole.Designer.cs">
       <DependentUpon>EditRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDienGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienGV.Designer.cs">
+      <DependentUpon>GiaoDienGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienNVPDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienNVPDT.Designer.cs">
+      <DependentUpon>GiaoDienNVPDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienSV.Designer.cs">
+      <DependentUpon>GiaoDienSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienTRGDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienTRGDV.Designer.cs">
+      <DependentUpon>GiaoDienTRGDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateEditUserRoleForm.resx">
+      <DependentUpon>CreateEditUserRoleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DBAUI.resx">
       <DependentUpon>DBAUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMommonForm.resx">
+      <DependentUpon>EditMommonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienGV.resx">
+      <DependentUpon>GiaoDienGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienNVPDT.resx">
+      <DependentUpon>GiaoDienNVPDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienSV.resx">
+      <DependentUpon>GiaoDienSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienTRGDV.resx">
+      <DependentUpon>GiaoDienTRGDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
