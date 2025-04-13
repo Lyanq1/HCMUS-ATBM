@@ -98,6 +98,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMommonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMommonForm.Designer.cs">
+      <DependentUpon>AddMommonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateEditUserRoleForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,17 +116,53 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EditMommonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMommonForm.Designer.cs">
+      <DependentUpon>EditMommonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDienGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienGV.Designer.cs">
+      <DependentUpon>GiaoDienGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienNVPDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienNVPDT.Designer.cs">
+      <DependentUpon>GiaoDienNVPDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienSV.Designer.cs">
+      <DependentUpon>GiaoDienSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienTRGDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienTRGDV.Designer.cs">
+      <DependentUpon>GiaoDienTRGDV.cs</DependentUpon>
+    </Compile>
     <Compile Include="GrantRevokeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GrantRevokeForm.Designer.cs">
       <DependentUpon>GrantRevokeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PermissionInfoForm.cs">
       <SubType>Form</SubType>
@@ -135,17 +177,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TTNhanVien.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddMommonForm.resx">
+      <DependentUpon>AddMommonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateEditUserRoleForm.resx">
       <DependentUpon>CreateEditUserRoleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatabaseHelper.resx">
       <DependentUpon>DatabaseHelper.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditMommonForm.resx">
+      <DependentUpon>EditMommonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienGV.resx">
+      <DependentUpon>GiaoDienGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienNVPDT.resx">
+      <DependentUpon>GiaoDienNVPDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienSV.resx">
+      <DependentUpon>GiaoDienSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienTRGDV.resx">
+      <DependentUpon>GiaoDienTRGDV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GrantRevokeForm.resx">
       <DependentUpon>GrantRevokeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PermissionInfoForm.resx">
       <DependentUpon>PermissionInfoForm.cs</DependentUpon>
