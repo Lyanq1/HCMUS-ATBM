@@ -37,38 +37,38 @@
             // lblPrompt
             // 
             this.lblPrompt.AutoSize = true;
-            this.lblPrompt.Location = new System.Drawing.Point(319, 65);
+            this.lblPrompt.Location = new System.Drawing.Point(321, 111);
             this.lblPrompt.Name = "lblPrompt";
-            this.lblPrompt.Size = new System.Drawing.Size(35, 13);
+            this.lblPrompt.Size = new System.Drawing.Size(69, 13);
             this.lblPrompt.TabIndex = 0;
-            this.lblPrompt.Text = "label1";
+            this.lblPrompt.Text = "Change SĐT";
             this.lblPrompt.Click += new System.EventHandler(this.lblPrompt_Click);
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(308, 149);
+            this.txtInput.Location = new System.Drawing.Point(292, 146);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(100, 20);
+            this.txtInput.Size = new System.Drawing.Size(124, 20);
             this.txtInput.TabIndex = 1;
             this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(226, 230);
+            this.btnOK.Location = new System.Drawing.Point(218, 209);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 2;
-            this.btnOK.Text = "button1";
+            this.btnOK.Text = "Change";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(398, 230);
+            this.btnCancel.Location = new System.Drawing.Point(416, 209);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "button2";
+            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
