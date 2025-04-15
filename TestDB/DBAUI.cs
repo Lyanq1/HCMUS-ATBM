@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Oracle.ManagedDataAccess.Client;
@@ -49,14 +50,14 @@ namespace TestDB
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
 
-                    dataGridView1.DataSource = dt;
+                    dataGridViewUsers.DataSource = dt;
  
 
-                    string query2 = "select * from QLDH_SINHVIEN";
+                    string query2 = "select * from QLDH_DONVI";
                     OracleDataAdapter adapter2 = new OracleDataAdapter(query2, conn);
                     DataTable dt2 = new DataTable();
                     adapter2.Fill(dt2);
-                    dataGridView2.DataSource = dt2;
+                    dataGridViewRoles.DataSource = dt2;
  
                 }
             }
@@ -83,7 +84,15 @@ namespace TestDB
                 textBox1.ForeColor = Color.Silver;
             }
         }
-
+        private void LoadFormIntoPanel(Form form)
+        {
+            panel5.Controls.Clear(); // Xóa form cũ
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            panel5.Controls.Add(form);
+            form.Show();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -153,6 +162,79 @@ namespace TestDB
 
             // Sau khi form đóng, tải lại dữ liệu (nếu cần)
             LoadData();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LoginUI.con.Dispose();
+                LoginUI.con.Close();
+                OracleConnection.ClearPool(con);
+
+
+                MessageBox.Show("Đóng kết nối và đăng xuất thành công");
+
+                LoginUI login = new LoginUI();
+                login.Show();
+                this.Close();
+
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            LoginUI.con.Dispose();
+            LoginUI.con.Close();
+            OracleConnection.ClearPool(con);
+
+            Application.Exit();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            LoadFormIntoPanel(new UserPrivileges());
+        }
+
+        private void iconButton8_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            //if (dataGridViewUsers.SelectedRows.Count == 0) return;
+            //string selectedUser = dataGridViewUsers.SelectedRows[0].Cells["USERNAME"].Value.ToString();
+
+            //var editForm = new CreateEditUserRoleForm(con, "USER", selectedUser);
+            //if (editForm.ShowDialog() == DialogResult.OK)
+            //{
+            //    LoadUsersAndRoles();
+            //}
+
+        }
+
+        // Day la gridview cua USEr
+        private void dataGridViewRoles_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        //Create user button
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //// Hiển thị form tạo mới với chế độ USER hoặc ROLE
+            //var createForm = new CreateEditUserRoleForm(con, "USER"); // Thay "USER" bằng "ROLE" nếu tạo role
+            //if (createForm.ShowDialog() == DialogResult.OK)
+            //{
+            //    LoadUsersAndRoles(); // Refresh danh sách sau khi tạo
+            //}
         }
     }
 }

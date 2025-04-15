@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\visual_studio_community\\Project Location\\TestDB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\dbaui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dbaui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dbaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\editrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\editrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,18 +38,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditRole.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\EditRole.cs",
-              "RelativeDocumentMoniker": "TestDB\\EditRole.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\EditRole.cs [Design]",
-              "RelativeToolTip": "TestDB\\EditRole.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "DBAUI.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DBAUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\DBAUI.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DBAUI.cs",
+              "RelativeToolTip": "TestDB\\DBAUI.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAQwLMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T14:11:24.077Z",
+              "WhenOpened": "2025-03-28T03:17:23.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserPrivileges.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs",
+              "RelativeDocumentMoniker": "TestDB\\UserPrivileges.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs",
+              "RelativeToolTip": "TestDB\\UserPrivileges.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAiwOQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:38:14.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserPrivileges.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs",
+              "RelativeDocumentMoniker": "TestDB\\UserPrivileges.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs [Design]",
+              "RelativeToolTip": "TestDB\\UserPrivileges.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:36:50.218Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\Program.cs",
+              "RelativeDocumentMoniker": "TestDB\\Program.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\Program.cs",
+              "RelativeToolTip": "TestDB\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:57:02.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginUI.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\LoginUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\LoginUI.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\LoginUI.cs [Design]",
+              "RelativeToolTip": "TestDB\\LoginUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:12:17.283Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -54,28 +117,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBAUI.Designer.cs",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DBAUI.Designer.cs",
-              "RelativeDocumentMoniker": "TestDB\\DBAUI.Designer.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DBAUI.Designer.cs",
-              "RelativeToolTip": "TestDB\\DBAUI.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4CAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T03:18:19.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DBAUI.cs",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DBAUI.cs",
-              "RelativeDocumentMoniker": "TestDB\\DBAUI.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DBAUI.cs",
-              "RelativeToolTip": "TestDB\\DBAUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
+              "Title": "LoginUI.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\LoginUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\LoginUI.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\LoginUI.cs",
+              "RelativeToolTip": "TestDB\\LoginUI.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwE4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T03:17:23.971Z",
+              "WhenOpened": "2025-04-14T07:17:18.81Z",
               "EditorCaption": ""
             }
           ]
