@@ -19,47 +19,41 @@ namespace TestDB
         {
             InitializeComponent();
         }
-        public static OracleConnection con;
+        public static OracleConnection conNow;
         public static string current_user;
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadData();
         }
+
         private void LoadData()
         {
             try
             {
-                // Chuỗi kết nối tới Oracle CDB
-                string username,password;
-                string connectionString = @"Data Source=localhost:1521/XEPDB1;User Id=QLDH;Password=123";
-                con = new OracleConnection();
-                con.ConnectionString = connectionString;
-                con.Open();
-                OracleCommand selectUser = con.CreateCommand();
+                conNow = LoginUI.con;
+                OracleCommand selectUser = conNow.CreateCommand();
                 selectUser.CommandText = "select sys_context('userenv', 'current_user') from dual";
                 OracleDataReader reader = selectUser.ExecuteReader();
-                reader.Read();
-                label3.Text = "Welcome " + reader.GetString(0).ToUpper() + ",";
-
-                using (OracleConnection conn = new OracleConnection(connectionString))
+                if (reader.Read())
                 {
-                    conn.Open();
-                    string query = "SELECT USERNAME, CREATED, LAST_LOGIN FROM dba_users ORDER BY username"; 
-
-                    OracleDataAdapter adapter = new OracleDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-
-                    dataGridViewUsers.DataSource = dt;
- 
-
-                    string query2 = "select * from QLDH_DONVI";
-                    OracleDataAdapter adapter2 = new OracleDataAdapter(query2, conn);
-                    DataTable dt2 = new DataTable();
-                    adapter2.Fill(dt2);
-                    dataGridViewRoles.DataSource = dt2;
- 
+                    label3.Text = "Welcome " + reader.GetString(0).ToUpper() + ",";
                 }
+                reader.Close();
+
+
+                string query = "SELECT USERNAME, CREATED, LAST_LOGIN FROM dba_users ORDER BY last_login"; 
+
+                OracleDataAdapter adapter = new OracleDataAdapter(query, conNow);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridViewUsers.DataSource = dt;
+ 
+                string query2 = "SELECT ROLE, PASSWORD_REQUIRED AS PASSWORD_REQ,authentication_type,common FROM dba_roles ORDER BY ROLE";
+                OracleDataAdapter adapter2 = new OracleDataAdapter(query2, conNow);
+                DataTable dt2 = new DataTable();
+                adapter2.Fill(dt2);
+                dataGridViewRoles.DataSource = dt2;
+                
             }
             catch (Exception ex)
             {
@@ -93,88 +87,29 @@ namespace TestDB
             panel5.Controls.Add(form);
             form.Show();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void button1_Click(object sender, EventArgs e) { }
+        private void label2_Click(object sender, EventArgs e) { }
+        private void button6_Click(object sender, EventArgs e) { }
+        private void button7_Click(object sender, EventArgs e) { }
+        private void button5_Click(object sender, EventArgs e) { }
+        private void textBox2_TextChanged(object sender, EventArgs e) { }
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+        private void button8_Click(object sender, EventArgs e) { }
+        private void iconButton1_Click(object sender, EventArgs e) { }
+        private void iconPictureBox1_Click(object sender, EventArgs e) { }
+        private void label3_Click(object sender, EventArgs e) { }
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (con.State != ConnectionState.Open)
-            {
-                MessageBox.Show("Vui lòng kết nối đến cơ sở dữ liệu trước");
-                return;
-            }
-
-            // Mở form quản lý Role
-            //EditRoleForm roleForm = new EditRoleForm();
-            //roleForm.ShowDialog();
-
-            // Sau khi form đóng, tải lại dữ liệu (nếu cần)
-            LoadData();
-        }
-
+        //Logout_btn
         private void iconButton7_Click(object sender, EventArgs e)
         {
             try
             {
                 LoginUI.con.Dispose();
                 LoginUI.con.Close();
-                OracleConnection.ClearPool(con);
+                OracleConnection.ClearPool(conNow);
 
 
                 MessageBox.Show("Đóng kết nối và đăng xuất thành công");
-
                 LoginUI login = new LoginUI();
                 login.Show();
                 this.Close();
@@ -187,37 +122,52 @@ namespace TestDB
             }
         }
 
-        private void iconButton8_Click(object sender, EventArgs e)
+        //Exit_btn
+        private void iconButton8_Click_1(object sender, EventArgs e)
         {
             LoginUI.con.Dispose();
             LoginUI.con.Close();
-            OracleConnection.ClearPool(con);
+            OracleConnection.ClearPool(conNow);
 
             Application.Exit();
         }
 
+        //tab_user_privil
         private void iconButton2_Click(object sender, EventArgs e)
         {
             LoadFormIntoPanel(new UserPrivileges());
         }
 
-        private void iconButton8_Click_1(object sender, EventArgs e)
+        
+
+        // Phương thức cập nhật danh sách users và roles sau khi insert và delete
+        private void LoadUsersAndRoles()
         {
-            this.Close();
-            Application.Exit();
-        }
+            try
+            {
+                // Load Users
+                string userQuery = @"SELECT USERNAME AS USERNAME, CREATED, ACCOUNT_STATUS AS STATUS, LAST_LOGIN 
+                                   FROM dba_users 
+                                   ORDER BY USERNAME";
+                OracleDataAdapter userAdapter = new OracleDataAdapter(userQuery, conNow);
+                DataTable dtUsers = new DataTable();
+                userAdapter.Fill(dtUsers);
+                dataGridViewUsers.DataSource = dtUsers;
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            //if (dataGridViewUsers.SelectedRows.Count == 0) return;
-            //string selectedUser = dataGridViewUsers.SelectedRows[0].Cells["USERNAME"].Value.ToString();
+                // Load Roles
+                string roleQuery = @"SELECT ROLE, PASSWORD_REQUIRED AS PASSWORD_REQ 
+                                    FROM dba_roles 
+                                    ORDER BY ROLE";
+                OracleDataAdapter roleAdapter = new OracleDataAdapter(roleQuery, conNow);
+                DataTable dtRoles = new DataTable();
+                roleAdapter.Fill(dtRoles);
+                dataGridViewRoles.DataSource = dtRoles;
+            }
 
-            //var editForm = new CreateEditUserRoleForm(con, "USER", selectedUser);
-            //if (editForm.ShowDialog() == DialogResult.OK)
-            //{
-            //    LoadUsersAndRoles();
-            //}
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
+            }
         }
 
         // Day la gridview cua USEr
@@ -226,15 +176,97 @@ namespace TestDB
 
         }
 
+        //cai nay la edit user
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridViewUsers.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn user cần chỉnh sửa!");
+                return;
+            }
+            string selectedUser = dataGridViewUsers.SelectedRows[0].Cells["USERNAME"].Value.ToString();
+
+            var editForm = new CreateEditUserRoleForm (conNow, "USER", selectedUser);
+            if (editForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadUsersAndRoles();
+            }
+
+        }
+
         //Create user button
         private void button3_Click(object sender, EventArgs e)
         {
-            //// Hiển thị form tạo mới với chế độ USER hoặc ROLE
-            //var createForm = new CreateEditUserRoleForm(con, "USER"); // Thay "USER" bằng "ROLE" nếu tạo role
-            //if (createForm.ShowDialog() == DialogResult.OK)
-            //{
-            //    LoadUsersAndRoles(); // Refresh danh sách sau khi tạo
-            //}
+            // Hiển thị form tạo mới với chế độ USER hoặc ROLE
+            var createForm = new CreateEditUserRoleForm (conNow, "USER"); // Thay "USER" bằng "ROLE" nếu tạo role
+            if (createForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadUsersAndRoles(); // Refresh danh sách sau khi tạo
+            }
         }
+
+        //Delete user
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewUsers.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn user cần xóa!");
+                return;
+            }
+
+            string username = dataGridViewUsers.SelectedRows[0].Cells["USERNAME"].Value.ToString();
+
+            // Xác nhận xóa
+            var confirmResult = MessageBox.Show($"Bạn chắc chắn muốn xóa user '{username}'?",
+                                              "Xác nhận xóa",
+                                               MessageBoxButtons.YesNo,
+                                               MessageBoxIcon.Warning);
+            if (confirmResult != DialogResult.Yes)
+                return;
+
+            try
+            {
+                // Kiểm tra kết nối
+                
+
+                // Sử dụng parameterized query
+                string query = $"DROP USER {username} CASCADE";
+                using (var cmd = new OracleCommand(query, conNow))
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show($"Đã xóa user '{username}' thành công!");
+                    LoadUsersAndRoles();
+                }
+            }
+            catch (OracleException ex) when (ex.Number == 1942) // ORA-01942: user does not exist
+            {
+                MessageBox.Show($"User '{username}' không tồn tại!");
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show($"Lỗi Oracle: {ex.Message}\nMã lỗi: {ex.ErrorCode}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi hệ thống: {ex.Message}");
+            }
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
