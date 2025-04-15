@@ -70,6 +70,7 @@ namespace TestDB
                 btnUpdateAll.Enabled = true;
 
                 // Hiển thị các trường cần thiết
+                txtMANV.ReadOnly = true; // Không cho phép sửa mã nhân viên
                 txtHOTEN.Visible = true;
                 txtLuong.Visible = true;
                 txtPHUCAP.Visible = true;
