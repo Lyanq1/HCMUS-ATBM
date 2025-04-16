@@ -87,6 +87,7 @@ namespace TestDB
             panel5.Controls.Add(form);
             form.Show();
         }
+
         private void button1_Click(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
         private void button6_Click(object sender, EventArgs e) { }
@@ -95,9 +96,14 @@ namespace TestDB
         private void textBox2_TextChanged(object sender, EventArgs e) { }
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
         private void button8_Click(object sender, EventArgs e) { }
-        private void iconButton1_Click(object sender, EventArgs e) { }
+        private void iconButton1_Click(object sender, EventArgs e) 
+        {
+            //LoadFormIntoPanel(new DBAUI());
+        }
         private void iconPictureBox1_Click(object sender, EventArgs e) { }
         private void label3_Click(object sender, EventArgs e) { }
+        // Day la gridview cua USEr
+        private void dataGridViewRoles_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
 
         //Logout_btn
         private void iconButton7_Click(object sender, EventArgs e)
@@ -138,7 +144,10 @@ namespace TestDB
             LoadFormIntoPanel(new UserPrivileges());
         }
 
-        
+        private void rolePriviTab_Click(object sender, EventArgs e)
+        {
+
+        }
 
         // Phương thức cập nhật danh sách users và roles sau khi insert và delete
         private void LoadUsersAndRoles()
@@ -146,18 +155,14 @@ namespace TestDB
             try
             {
                 // Load Users
-                string userQuery = @"SELECT USERNAME AS USERNAME, CREATED, ACCOUNT_STATUS AS STATUS, LAST_LOGIN 
-                                   FROM dba_users 
-                                   ORDER BY USERNAME";
+                string userQuery = @"SELECT USERNAME, CREATED, LAST_LOGIN FROM dba_users ORDER BY last_login";
                 OracleDataAdapter userAdapter = new OracleDataAdapter(userQuery, conNow);
                 DataTable dtUsers = new DataTable();
                 userAdapter.Fill(dtUsers);
                 dataGridViewUsers.DataSource = dtUsers;
 
                 // Load Roles
-                string roleQuery = @"SELECT ROLE, PASSWORD_REQUIRED AS PASSWORD_REQ 
-                                    FROM dba_roles 
-                                    ORDER BY ROLE";
+                string roleQuery = @"SELECT ROLE, PASSWORD_REQUIRED AS PASSWORD_REQ,authentication_type,common FROM dba_roles ORDER BY ROLE";
                 OracleDataAdapter roleAdapter = new OracleDataAdapter(roleQuery, conNow);
                 DataTable dtRoles = new DataTable();
                 roleAdapter.Fill(dtRoles);
@@ -170,11 +175,7 @@ namespace TestDB
             }
         }
 
-        // Day la gridview cua USEr
-        private void dataGridViewRoles_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
 
         //cai nay la edit user
         private void button2_Click_1(object sender, EventArgs e)
@@ -257,14 +258,66 @@ namespace TestDB
 
         }
 
+        //edit roles
         private void button7_Click_1(object sender, EventArgs e)
         {
 
         }
 
+        //create roles
         private void button6_Click_1(object sender, EventArgs e)
         {
+            // Hiển thị form tạo mới với chế độ USER hoặc ROLE
+            var createForm = new CreateEditUserRoleForm(conNow, "ROLE"); // Thay "USER" bằng "ROLE" nếu tạo role
+            if (createForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadUsersAndRoles(); // Refresh danh sách sau khi tạo
+            }
+        }
 
+        //delete roles
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            // Kiểm tra xem có dòng nào được chọn hay không, giả sử bạn có DataGridView hiển thị list Role (dataGridViewRoles)
+            if (dataGridViewRoles.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn role cần xóa!");
+                return;
+            }
+
+            // Lấy tên Role từ cột "ROLENAME". Cột này cần phải khớp với tên được đặt khi load dữ liệu của role
+            string roleName = dataGridViewRoles.SelectedRows[0].Cells["ROLE"].Value.ToString();
+
+            // Hiển thị hộp thoại xác nhận xóa
+            var confirmResult = MessageBox.Show($"Bạn chắc chắn muốn xóa role '{roleName}'?",
+                                                  "Xác nhận xóa",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Warning);
+            if (confirmResult != DialogResult.Yes)
+                return;
+
+            try
+            {
+               
+
+                // Tạo câu lệnh DROP ROLE
+                string query = $"DROP ROLE {roleName}";
+                using (var cmd = new OracleCommand(query, conNow))
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show($"Đã xóa role '{roleName}' thành công!");
+                    LoadUsersAndRoles(); // Cập nhật lại danh sách role
+                }
+            }
+            catch (OracleException ex)
+            {
+                // Nếu có lỗi Oracle, báo lỗi ra.
+                MessageBox.Show($"Lỗi Oracle: {ex.Message}\nMã lỗi: {ex.ErrorCode}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi hệ thống: {ex.Message}");
+            }
         }
 
         

@@ -22,15 +22,23 @@ namespace TestDB
         }
         public static OracleConnection con;
         public static string result_roleuser;
-        // Cần thêm tên của user DBA đăng nhập cho việc access bảng dễ hơn
-        //OracleCommand selectUser = con.CreateCommand();
-        //selectUser.CommandText = "select sys_context('userenv', 'current_user') from dual";
-        //        OracleDataReader reader = selectUser.ExecuteReader();
-        //reader.Read();
-        //        label3.Text = "Welcome " + reader.GetString(0).ToUpper() + ",";
         private void UserPrivileges_Load(object sender, EventArgs e)
         {
             con = LoginUI.con;
+            //string sql = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%' ";
+
+            //OracleDataAdapter da = new OracleDataAdapter(sql, con);
+            //DataTable dt1 = new DataTable();
+            //da.Fill(dt1);
+            //dataGridView1.DataSource = dt1;
+            ////data_grid_view1 = dataGridView1;
+
+            //string sql1 = "select * from DBA_COL_PRIVS where TABLE_NAME LIKE 'QLDH_%' ";
+
+            //OracleDataAdapter da1 = new OracleDataAdapter(sql1, con);
+            //DataTable dt2 = new DataTable();
+            //da.Fill(dt2);
+            //dataGridView2.DataSource = dt2;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -145,11 +153,6 @@ namespace TestDB
                     // Gọi proc
                     cmd.CommandText = "QLDH.grant_select_privi";
                     cmd.CommandType = CommandType.StoredProcedure;
-                    //column_name in varchar2,
-                    //schema_name in varchar2,
-                    //table_name in varchar2,
-                    //user_name in varchar2,
-                    //withgrantoption in varchar2
 
                     cmd.Parameters.Add("privi_name", Privi.Text.ToString());
                     cmd.Parameters.Add("column_name", column_list);
@@ -245,6 +248,86 @@ namespace TestDB
         {
             this.Close();
             Application.Exit();
+        }
+
+        private void check_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Username.Text.Length == 0)
+                {
+                    MessageBox.Show("Vui lòng nhập Username hoặc Role");
+                    return;
+                }
+                else
+                {
+                    var cmd = new OracleCommand();
+
+                    cmd.Connection = con;
+                    cmd.CommandText = "QLDH.check_user_role_exist";
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("user_name", Username.Text.ToString());
+                    cmd.Parameters.Add("res", OracleDbType.Int32).Direction = ParameterDirection.Output;
+
+                    //cmd.Connection.Open();
+                    cmd.ExecuteNonQuery();
+
+                    result_roleuser = Convert.ToString(cmd.Parameters["res"].Value);
+
+                    if (result_roleuser != "1" && result_roleuser != "2")
+                    {
+                        result.Text = "Không tồn tại";
+                        return;
+                    }
+                    else
+                    {
+                        Username.Enabled = false;
+                        Privi.Enabled = true;
+                        //table.Enabled = true;
+                        //column.Enabled = true;
+
+
+                        if (result_roleuser == "1")
+                        {
+                            result.Text = "Đây là User";
+                            withGrantOption.Enabled = true;
+                        }
+                        else
+                        {
+                            result.Text = "Đây là Role";
+                        }
+                    }
+                }
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+        private void result_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Username.Clear();
+            Username.Enabled = true;
+            result.Text = "Not checked";
+            Privi.SelectedIndex = -1;
+            Privi.Enabled = false;
+            table.SelectedIndex = -1;
+            table.Enabled = false;
+            for (int i = 0; i < column.Items.Count; i++)
+            {
+                column.SetItemChecked(i, false);
+            }
+            column.Enabled = false;
+            withGrantOption.Checked = false;
+            withGrantOption.Enabled = false;
         }
     }
 }
