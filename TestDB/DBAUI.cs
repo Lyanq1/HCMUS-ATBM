@@ -146,6 +146,7 @@ namespace TestDB
 
         private void rolePriviTab_Click(object sender, EventArgs e)
         {
+            LoadFormIntoPanel(new RolePrivileges());
 
         }
 

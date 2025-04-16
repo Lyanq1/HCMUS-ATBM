@@ -125,6 +125,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolePrivileges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RolePrivileges.Designer.cs">
+      <DependentUpon>RolePrivileges.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserPrivileges.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RolePrivileges.resx">
+      <DependentUpon>RolePrivileges.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserPrivileges.resx">
       <DependentUpon>UserPrivileges.cs</DependentUpon>
     </EmbeddedResource>

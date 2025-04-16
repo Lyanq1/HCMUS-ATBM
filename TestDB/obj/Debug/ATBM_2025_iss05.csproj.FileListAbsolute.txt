@@ -81,3 +81,4 @@ D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.pdb
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.LoginUI.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.UserPrivileges.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.CreateEditUserRoleForm.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.RolePrivileges.resources
