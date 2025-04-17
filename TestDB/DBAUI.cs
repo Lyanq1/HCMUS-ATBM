@@ -149,7 +149,11 @@ namespace TestDB
             LoadFormIntoPanel(new RolePrivileges());
 
         }
+        private void objPriviTab_Click(object sender, EventArgs e)
+        {
+            LoadFormIntoPanel(new ObjectPrivileges());
 
+        }
         // Phương thức cập nhật danh sách users và roles sau khi insert và delete
         private void LoadUsersAndRoles()
         {
@@ -321,6 +325,9 @@ namespace TestDB
             }
         }
 
-        
+        private void revokePrivilTab_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

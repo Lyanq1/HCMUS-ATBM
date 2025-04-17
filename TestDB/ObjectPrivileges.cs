@@ -2,96 +2,81 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.Common;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-
-using System.Windows.Documents;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 using Oracle.ManagedDataAccess.Client;
 
 namespace TestDB
 {
-    public partial class UserPrivileges : Form
+    public partial class ObjectPrivileges : Form
     {
-        public UserPrivileges()
+        public ObjectPrivileges()
         {
             InitializeComponent();
         }
-        public static OracleConnection con;
+        public static OracleConnection conNow;
         public static string result_roleuser;
-        private void UserPrivileges_Load(object sender, EventArgs e)
+
+
+        private void ObjectPrivileges_Load(object sender, EventArgs e)
         {
-            con = LoginUI.con;
-            //string sql = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%' ";
-
-            //OracleDataAdapter da = new OracleDataAdapter(sql, con);
-            //DataTable dt1 = new DataTable();
-            //da.Fill(dt1);
-            //dataGridView1.DataSource = dt1;
-            ////data_grid_view1 = dataGridView1;
-
-            //string sql1 = "select * from DBA_COL_PRIVS where TABLE_NAME LIKE 'QLDH_%' ";
-
-            //OracleDataAdapter da1 = new OracleDataAdapter(sql1, con);
-            //DataTable dt2 = new DataTable();
-            //da.Fill(dt2);
-            //dataGridView2.DataSource = dt2;
+            conNow = LoginUI.con;
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (Privi.Text.ToString() != "")
-            {
-                table.Enabled = true;
-            }
-            if (Privi.Text.ToString() == "UPDATE" || Privi.Text.ToString() == "SELECT")
-            {
-                column.Enabled = true;
-            }
-            else
-            {
-                column.Enabled = false;
-                for (int i = 0; i < column.Items.Count; i++)
-                {
-                    column.SetItemChecked(i, false);
-                }
-            }
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e) { }
+        private void table_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
-                int count_column = column.Items.Count;
-                for (int i = count_column - 1; i >= 0; i--)
+
+                column.Items.Clear(); // xóa column cũ
+
+                string query = "";
+                string selectedType = table.Text.ToString();
+                if (selectedType == "Table")
                 {
-                    column.Items.RemoveAt(i);
+                    query = "SELECT table_name FROM all_tables WHERE owner = 'QLDH'";
                 }
-                string query = "select COLUMN_NAME from dba_tab_columns where table_name = \'" + table.Text.ToString() + '\'';
-                OracleDataAdapter adapter = new OracleDataAdapter(query, con);
+                else if (selectedType == "View")
+                {
+                    query = "SELECT view_name AS table_name FROM all_views WHERE owner = 'QLDH'";
+                }
+                else if (selectedType == "StoreProcedure")
+                {
+                    query = "SELECT object_name as table_name FROM all_objects WHERE object_type = 'PROCEDURE' AND owner = 'QLDH'";
+                    
+                }
+                else if (selectedType == "Function")
+                {
+                    query = "SELECT object_name as table_name FROM all_objects WHERE object_type = 'FUNCTION' AND owner = 'QLDH'";
+                }
+
+                OracleDataAdapter adapter = new OracleDataAdapter(query, conNow);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
+
+
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    column.Items.Add(row["column_name"].ToString());
+                    column.Items.Add(row[0].ToString());
                 }
+
+
             }
             catch (System.Data.OracleClient.OracleException ex)
             {
                 MessageBox.Show(ex.Message);
                 return;
             }
-        }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        }
+        private void label3_Click(object sender, EventArgs e) { }
+
+        private void Privi_SelectedIndexChanged(object sender, EventArgs e)
         {
             
         }
@@ -100,64 +85,58 @@ namespace TestDB
         {
             try
             {
-                if (Username.Text.Length == 0) {
+                string object_name = "";
+                if (Username.Text.Length == 0)
+                {
                     MessageBox.Show("Vui lòng nhập vào tên username");
                 }
 
-                if (Privi.Text.Length == 0) {
+                if (Privi.Text.Length == 0)
+                {
                     MessageBox.Show("Vui lòng nhập vào quyền cần gán");
                 }
 
-                if (table.Text.Length == 0) {
-                    MessageBox.Show("Vui lòng chọn bảng");
+                if (table.Text.Length == 0)
+                {
+                    MessageBox.Show("Vui lòng chọn một object");
 
                 }
-                
-                if (column.Items.Count == 0) { //Nếu đã chọn được bảng
-                    if ((Privi.Text.ToString() == "SELECT" || Privi.Text.ToString() == "UPDATE") && column.CheckedItems.Count == 0)
-                    {
-                        MessageBox.Show("Vui lòng chọn thuộc tính cần gán");
 
+                for (int i = 0; i < column.Items.Count; i++)
+                {
+                    if (column.GetItemChecked(i))
+                    {
+                        object_name = column.Items[i].ToString();
+                        break;
                     }
                 }
 
                 var cmd = new OracleCommand();
-                cmd.Connection = con;
+                cmd.Connection = conNow;
                 string withgrantoption_ = (withGrantOption.Checked) ? "WITH GRANT OPTION" : "";
 
-                // Lấy ra các cột cần được grant
-                string column_list = "";
-                for (int i = 0; i < column.Items.Count; i++)
-                {
-                     if (column.GetItemChecked(i) == true)
-                    {
-                        column_list += column.Items[i].ToString() + ',';
-                    }    
-                }    
-                if (column_list.Length > 0)
-                {
-                    // Xóa dấu , cuối chuỗi
-                    column_list = column_list.Substring(0, column_list.Length - 1);
-                }
-
                 // Lấy tên schema
-                OracleCommand get_schema_name = con.CreateCommand();
-                get_schema_name.CommandText = "select owner from dba_tables where table_name = \'" + table.Text.ToString() + '\'';
+                OracleCommand get_schema_name = conNow.CreateCommand();
+                if (conNow.State != ConnectionState.Open)
+                    conNow.Open();
+                get_schema_name.CommandText = "select owner from dba_objects where OBJECT_NAME = \'" + object_name + '\'';
                 OracleDataReader reader = get_schema_name.ExecuteReader();
+                string schema_name = "";
                 reader.Read();
-                string schema_name = reader.GetString(0);
+                
+                schema_name = reader.GetString(0);
+                reader.Close();
 
                 // Xử lý các trường hợp grant
                 if (Privi.Text.ToString() == "SELECT")
                 {
                     // Gọi proc
-                    cmd.CommandText = "QLDH.grant_select_privi";
+                    cmd.CommandText = "QLDH.grant_object_privi";
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     cmd.Parameters.Add("privi_name", Privi.Text.ToString());
-                    cmd.Parameters.Add("column_name", column_list);
                     cmd.Parameters.Add("schema_name", schema_name);
-                    cmd.Parameters.Add("table_name", table.Text.ToString());
+                    cmd.Parameters.Add("object_name", object_name);
                     cmd.Parameters.Add("user_name", Username.Text.ToString());
                     cmd.Parameters.Add("withgrantoption", withgrantoption_);
                     cmd.ExecuteNonQuery();
@@ -165,7 +144,7 @@ namespace TestDB
                     //cập nhật lại Privilge
                     string sql = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%'";
 
-                    OracleDataAdapter da = new OracleDataAdapter(sql, con);
+                    OracleDataAdapter da = new OracleDataAdapter(sql, conNow);
                     DataTable dt1 = new DataTable();
                     da.Fill(dt1);
                     dataGridView1.DataSource = dt1;
@@ -173,81 +152,93 @@ namespace TestDB
 
                 else if (Privi.Text.ToString() == "UPDATE")
                 {
-                    cmd.CommandText = "QLDH.grant_update_privi";
+                    cmd.CommandText = "QLDH.grant_object_privi";
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.Add("privi_name", Privi.Text.ToString());
+                    cmd.Parameters.Add("schema_name", schema_name);
+                    cmd.Parameters.Add("object_name", object_name);
                     cmd.Parameters.Add("user_name", Username.Text.ToString());
-                    cmd.Parameters.Add("table_name", table.Text.ToString());
-                    cmd.Parameters.Add("column_name", column_list);
-                    cmd.Parameters.Add("withgrantoption", withgrantoption_);
-                    cmd.ExecuteNonQuery();
-
-                    //cập nhật lại Privilge
-                    string sql = "select * from DBA_COL_PRIVS where TABLE_NAME LIKE 'QLDH_%' ";
-
-                    OracleDataAdapter da = new OracleDataAdapter(sql, con);
-                    DataTable dt1 = new DataTable();
-                    da.Fill(dt1);
-                    dataGridView2.DataSource = dt1;
-                }
-
-                else if (Privi.Text.ToString() == "INSERT")
-                {
-                    cmd.CommandText = "QLDH.grant_insert_privi";
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-                    cmd.Parameters.Add("user_name", Username.Text.ToString());
-                    cmd.Parameters.Add("table_name", table.Text.ToString());
                     cmd.Parameters.Add("withgrantoption", withgrantoption_);
                     cmd.ExecuteNonQuery();
 
                     //cập nhật lại Privilge
                     string sql = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%' ";
 
-                    OracleDataAdapter da = new OracleDataAdapter(sql, con);
+                    OracleDataAdapter da = new OracleDataAdapter(sql, conNow);
+                    DataTable dt1 = new DataTable();
+                    da.Fill(dt1);
+                    dataGridView1.DataSource = dt1;
+                }
+
+                else if (Privi.Text.ToString() == "INSERT")
+                {
+                    cmd.CommandText = "QLDH.grant_object_privi";
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("privi_name", Privi.Text.ToString());
+                    cmd.Parameters.Add("schema_name", schema_name);
+                    cmd.Parameters.Add("object_name", object_name);
+                    cmd.Parameters.Add("user_name", Username.Text.ToString());
+                    cmd.Parameters.Add("withgrantoption", withgrantoption_);
+                    cmd.ExecuteNonQuery();
+
+                    //cập nhật lại Privilge
+                    string sql = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%' ";
+
+                    OracleDataAdapter da = new OracleDataAdapter(sql, conNow);
                     DataTable dt1 = new DataTable();
                     da.Fill(dt1);
                     dataGridView1.DataSource = dt1;
                 }
                 else if (Privi.Text.ToString() == "DELETE")
                 {
-                    cmd.CommandText = "QLDH.grant_delete_privi";
+                    cmd.CommandText = "QLDH.grant_object_privi";
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.Add("privi_name", Privi.Text.ToString());
+                    cmd.Parameters.Add("schema_name", schema_name);
+                    cmd.Parameters.Add("object_name", object_name);
                     cmd.Parameters.Add("user_name", Username.Text.ToString());
-                    cmd.Parameters.Add("table_name", table.Text.ToString());
                     cmd.Parameters.Add("withgrantoption", withgrantoption_);
                     cmd.ExecuteNonQuery();
 
                     //cập nhật lại Privilge
                     string sql = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%' ";
 
-                    OracleDataAdapter da = new OracleDataAdapter(sql, con);
+                    OracleDataAdapter da = new OracleDataAdapter(sql, conNow);
+                    DataTable dt1 = new DataTable();
+                    da.Fill(dt1);
+                    dataGridView1.DataSource = dt1;
+                }
+
+                if (Privi.Text.ToString() == "EXECUTE")
+                {
+                    cmd.CommandText = "QLDH.grant_execute_privi";
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("user_name", Username.Text.ToString());
+                    cmd.Parameters.Add("object_name", object_name);
+                    cmd.Parameters.Add("withgrantoption", withgrantoption_);
+                    cmd.ExecuteNonQuery();
+
+                    // Cập nhật lại danh sách quyền
+                    string sql = "select * from DBA_TAB_PRIVS where PRIVILEGE='EXECUTE' and grantor = 'QLDH'";
+                    OracleDataAdapter da = new OracleDataAdapter(sql, conNow);
                     DataTable dt1 = new DataTable();
                     da.Fill(dt1);
                     dataGridView1.DataSource = dt1;
                 }
 
                 MessageBox.Show("Cấp quyền cho " + ((result_roleuser == "1") ? "user " : "role ") + Username.Text.ToString() + " thành công");
-                
 
-            }   
+
+            }
             catch (OracleException ex)
             {
                 MessageBox.Show(ex.Message);
                 return;
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton8_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
         }
 
         private void check_Click(object sender, EventArgs e)
@@ -263,7 +254,7 @@ namespace TestDB
                 {
                     var cmd = new OracleCommand();
 
-                    cmd.Connection = con;
+                    cmd.Connection = conNow;
                     cmd.CommandText = "QLDH.check_user_role_exist";
                     cmd.CommandType = CommandType.StoredProcedure;
 
@@ -300,39 +291,31 @@ namespace TestDB
                     }
                 }
             }
-            catch (OracleException ex)
+            catch { 
+                
+            }
+
+        }
+
+        private void column_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (e.NewValue == CheckState.Checked)
             {
-                MessageBox.Show(ex.Message);
-                return;
+                // Bỏ check các item khác
+                for (int i = 0; i < column.Items.Count; i++)
+                {
+                    if (i != e.Index)
+                    {
+                        column.SetItemChecked(i, false);
+                    }
+                }
             }
         }
-
-        private void result_Click(object sender, EventArgs e)
+        private void column_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Username.Clear();
-            Username.Enabled = true;
-            result.Text = "Not checked";
-            Privi.SelectedIndex = -1;
-            Privi.Enabled = false;
-            table.SelectedIndex = -1;
-            table.Enabled = false;
-            for (int i = 0; i < column.Items.Count; i++)
-            {
-                column.SetItemChecked(i, false);
-            }
-            column.Enabled = false;
-            withGrantOption.Checked = false;
-            withGrantOption.Enabled = false;
-        }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
-}
+}  
