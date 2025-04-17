@@ -13,9 +13,9 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace TestDB
 {
-    public partial class DBAUI : Form
+    public partial class ADMINUI : Form
     {
-        public DBAUI()
+        public ADMINUI()
         {
             InitializeComponent();
         }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TestDB
 {
-    public partial class NhanVien : Form
+    public partial class MoMon_table : UserControl
     {
-        public NhanVien()
+        public MoMon_table()
         {
             InitializeComponent();
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

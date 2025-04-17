@@ -63,10 +63,7 @@ namespace TestDB
             try
             {
                 string connectionString = "";
-                //if (Role.Text == "SYSDBA")
-                //    connectionString = @"DATA SOURCE = localhost:1521/XE;DBA Privilege=SYSDBA; USER ID=" + Username.Text + ";PASSWORD=" + Password.Text;
-                //else
-                    connectionString = @"DATA SOURCE = localhost:1521/XEPDB1; User Id=" + Username.Text + ";Password=" + Password.Text;
+                connectionString = @"DATA SOURCE = localhost:1521/XEPDB1; User Id=" + Username.Text + ";Password=" + Password.Text;
 
                 con = new OracleConnection();
                 con.ConnectionString = connectionString;
@@ -75,18 +72,18 @@ namespace TestDB
                 userUser = Username.Text;
                 passUser = Password.Text;
 
-                if (Role.Text == "SYSDBA" || Role.Text == "ADMIN")
+                if (Role.Text == "ADMIN")
                 {
 
                     //OracleCommand command = new OracleCommand("alter session set \"_ORACLE_SCRIPT\"=true", con);
                     //command.ExecuteNonQuery();
                     MessageBox.Show("Connect với Oracle thành công");
-                    DBAUI dba = new DBAUI();
+                    ADMINUI dba = new ADMINUI();
                     dba.Show();
                 }
-                else
+                else if (Role.Text == "Nhân Viên")
                 {
-                    //MessageBox.Show("Connect nhân viên thành công");
+                    MessageBox.Show("Connect nhân viên thành công");
                     //OracleCommand command = new OracleCommand("alter session set \"_ORACLE_SCRIPT\"=true", con);
                     //command.ExecuteNonQuery();
                     //string sqlRole = "";
@@ -116,7 +113,8 @@ namespace TestDB
                     ////this.Hide();
 
                     //MessageBox.Show("Connect với Oracle thành công");
-                    //NhanVienUI NVUI = new NhanVienUI();
+                    NhanVienUI NVUI = new NhanVienUI();
+                    NVUI.Show();
                     //switch (roleUser)
                     //{
                     //    case "Nhân viên":

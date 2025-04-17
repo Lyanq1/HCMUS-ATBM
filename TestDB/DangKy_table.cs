@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestDB
 {
-    public partial class GiaoVien : Form
+    public partial class DangKy_table : UserControl
     {
-        public GiaoVien()
+        public DangKy_table()
         {
             InitializeComponent();
         }
