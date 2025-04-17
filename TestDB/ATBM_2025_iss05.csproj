@@ -117,11 +117,23 @@
     <Compile Include="DBAUI.Designer.cs">
       <DependentUpon>DBAUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoVien.Designer.cs">
+      <DependentUpon>GiaoVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginUI.Designer.cs">
       <DependentUpon>LoginUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="ObjectPrivileges.cs">
       <SubType>Form</SubType>
@@ -155,8 +167,14 @@
     <EmbeddedResource Include="DBAUI.resx">
       <DependentUpon>DBAUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiaoVien.resx">
+      <DependentUpon>GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ObjectPrivileges.resx">
       <DependentUpon>ObjectPrivileges.cs</DependentUpon>
@@ -171,6 +189,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RevokePrivileges.resx">
+      <DependentUpon>RevokePrivileges.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RolePrivileges.resx">
       <DependentUpon>RolePrivileges.cs</DependentUpon>
     </EmbeddedResource>

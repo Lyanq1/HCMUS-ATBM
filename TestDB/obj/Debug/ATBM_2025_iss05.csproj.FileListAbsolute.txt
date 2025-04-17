@@ -83,3 +83,6 @@ D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.UserP
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.CreateEditUserRoleForm.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.RolePrivileges.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.ObjectPrivileges.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.RevokePrivileges.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.GiaoVien.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.NhanVien.resources
