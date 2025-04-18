@@ -102,6 +102,7 @@
             this.label4.Size = new System.Drawing.Size(57, 26);
             this.label4.TabIndex = 6;
             this.label4.Text = "Role";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button1
             // 

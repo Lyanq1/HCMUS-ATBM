@@ -137,3 +137,5 @@ C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\ATBM_2025_iss05.csproj.CoreCompileInp
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\ATBM_2025_iss05.csproj.CopyComplete
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.exe
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.pdb
+C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.AddMommonForm.resources
+C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.EditMommonForm.resources

@@ -12,9 +12,32 @@ namespace TestDB
 {
     public partial class NhanVienUI : Form
     {
-        public NhanVienUI()
+        private string _connectionString;
+        private bool _isNVPDT;
+
+        // Constructor nhận tham số từ Login
+        public NhanVienUI(string connectionString, bool isNVPDT)
         {
-            InitializeComponent();
+            InitializeComponent(); // KHỞI TẠO CONTROL TỪ DESIGNER TRƯỚC
+
+            _connectionString = connectionString;
+            _isNVPDT = isNVPDT;
+
+            // Gọi hàm cấu hình MoMon_table ĐỘNG
+            RebuildMoMonTableWithPermissions();
+        }
+
+        private void RebuildMoMonTableWithPermissions()
+        {
+            // Xóa control cũ (nếu có)
+            tabPage2.Controls.Clear();
+
+            // Tạo mới MoMon_table với tham số
+            var moMonTable = new MoMon_table(_connectionString, _isNVPDT);
+            moMonTable.Dock = DockStyle.Fill;
+
+            // Thêm vào tabPage2
+            tabPage2.Controls.Add(moMonTable);
         }
 
         private void tabPage1_Click(object sender, EventArgs e)

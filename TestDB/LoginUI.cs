@@ -113,8 +113,65 @@ namespace TestDB
                     ////this.Hide();
 
                     //MessageBox.Show("Connect với Oracle thành công");
-                    NhanVienUI NVUI = new NhanVienUI();
-                    NVUI.Show();
+                    // Xác định roleUser từ CSDL (giống code cũ)
+                    // Xác định xem có phải NVPDT không
+                    string roleUser = "";
+                    OracleCommand cmd = new OracleCommand(
+                        "SELECT VAITRO FROM QLDH.QLDH_NHANVIEN WHERE MANLD = :username",
+                        con
+                    );
+                    cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
+                    var result = cmd.ExecuteScalar();
+
+                    // Kiểm tra role NHÂN VIÊN
+                    if (result != null)
+                    {
+                        roleUser = result.ToString();
+                    }
+                    else
+                    {
+                        // Kiểm tra có phải SINH VIÊN không (nếu cần)
+                        cmd.CommandText = "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username";
+                        cmd.Parameters.Clear();
+                        cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
+                        if (cmd.ExecuteScalar() != null)
+                        {
+                            roleUser = "SV";
+                        }
+                        else
+                        {
+                            MessageBox.Show("Người dùng không tồn tại");
+                            con.Close();
+                            return;
+                        }
+                    }
+
+                    
+
+                    // Phân quyền và mở form tương ứng
+                    Form roleForm;
+                    switch (roleUser)
+                    {
+                        case "GV":
+                            roleForm = new NhanVienUI(connectionString, false);
+                            break;
+                        case "NV PĐT":
+                            roleForm = new NhanVienUI(connectionString, true); // Hoặc NhanVienUI với isNVPDT = true
+                            break;
+                        case "TRGĐV":
+                            roleForm = new NhanVienUI(connectionString, false);
+                            break;
+                        case "SV":
+                            roleForm = new NhanVienUI(connectionString, false);
+                            break;
+                        default:
+                            MessageBox.Show("Vai trò không hợp lệ");
+                            con.Close();
+                            return;
+                    }
+
+                    roleForm.Show();
+                    this.Hide();
                     //switch (roleUser)
                     //{
                     //    case "Nhân viên":
@@ -161,6 +218,11 @@ namespace TestDB
         }
 
         private void Role_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

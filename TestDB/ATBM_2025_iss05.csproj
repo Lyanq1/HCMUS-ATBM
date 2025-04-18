@@ -105,6 +105,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMommomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMommomForm.Designer.cs">
+      <DependentUpon>AddMommomForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateEditUserRoleForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <Compile Include="ADMINUI.Designer.cs">
       <DependentUpon>ADMINUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMommonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMommonForm.Designer.cs">
+      <DependentUpon>EditMommonForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginUI.cs">
       <SubType>Form</SubType>
@@ -179,11 +191,17 @@
     <Compile Include="UserPrivileges.Designer.cs">
       <DependentUpon>UserPrivileges.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddMommomForm.resx">
+      <DependentUpon>AddMommomForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateEditUserRoleForm.resx">
       <DependentUpon>CreateEditUserRoleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINUI.resx">
       <DependentUpon>ADMINUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMommonForm.resx">
+      <DependentUpon>EditMommonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
