@@ -159,5 +159,10 @@ namespace TestDB
             this.Close();
             Application.Exit();
         }
+
+        private void Role_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

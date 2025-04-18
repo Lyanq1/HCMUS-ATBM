@@ -16,5 +16,10 @@ namespace TestDB
         {
             InitializeComponent();
         }
+
+        private void MoMon_table_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,5 +32,10 @@ namespace TestDB
             this.Close();
             Application.Exit();
         }
+
+        private void moMon_table1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
