@@ -22,16 +22,7 @@ namespace TestDB
                 using (var con = new OracleConnection(connectionString))
                 {
                     con.Open();
-                    // Debug: In ra user và schema hiện tại
-                    var cmdUser = new OracleCommand(
-                        "SELECT USER, SYS_CONTEXT('USERENV', 'CURRENT_SCHEMA') FROM DUAL",
-                        con
-                    );
-                    var reader = cmdUser.ExecuteReader();
-                    if (reader.Read())
-                    {
-                        Console.WriteLine($"Logged in as: {reader[0]}, Schema: {reader[1]}");
-                    }
+
                     // Kiểm tra nếu là DBA
                     if (username.ToUpper() == "QLDH")
                     {
@@ -53,7 +44,7 @@ namespace TestDB
                     }
                     else
                     {
-                        cmd.CommandText = "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username";
+                        cmd.CommandText = "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username"; // Sửa thành :username
                         cmd.Parameters.Clear(); // Xóa tham số cũ
                         cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = username;
                         if (cmd.ExecuteScalar() != null) role = "SV";

@@ -126,3 +126,4 @@ C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.GiaoDienNVPDT.resources
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.GiaoDienSV.resources
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.GiaoDienTRGDV.resources
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.LoginForm.resources
+C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.AddMommonForm.resources

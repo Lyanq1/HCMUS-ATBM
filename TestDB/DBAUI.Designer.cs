@@ -370,7 +370,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 34);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Delete roles";
+            this.button4.Text = "Delete users";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.btnDeleteUser_Click);
             // 

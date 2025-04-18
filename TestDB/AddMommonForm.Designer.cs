@@ -1,6 +1,6 @@
 ﻿namespace TestDB
 {
-    partial class EditMommonForm
+    partial class AddMommonForm
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -46,7 +46,6 @@
             this.txtMAMM.Location = new System.Drawing.Point(160, 21);
             this.txtMAMM.Margin = new System.Windows.Forms.Padding(4);
             this.txtMAMM.Name = "txtMAMM";
-            this.txtMAMM.ReadOnly = true;
             this.txtMAMM.Size = new System.Drawing.Size(265, 22);
             this.txtMAMM.TabIndex = 1;
             // 
@@ -101,7 +100,6 @@
             this.txtHK.Location = new System.Drawing.Point(160, 169);
             this.txtHK.Margin = new System.Windows.Forms.Padding(4);
             this.txtHK.Name = "txtHK";
-            this.txtHK.ReadOnly = true;
             this.txtHK.Size = new System.Drawing.Size(265, 22);
             this.txtHK.TabIndex = 7;
             // 
@@ -120,7 +118,6 @@
             this.txtNAM.Location = new System.Drawing.Point(160, 218);
             this.txtNAM.Margin = new System.Windows.Forms.Padding(4);
             this.txtNAM.Name = "txtNAM";
-            this.txtNAM.ReadOnly = true;
             this.txtNAM.Size = new System.Drawing.Size(265, 22);
             this.txtNAM.TabIndex = 9;
             // 
@@ -147,7 +144,7 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // EditMommonForm
+            // AddMommonForm
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -170,10 +167,10 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "EditMommonForm";
+            this.Name = "AddMommonForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Chỉnh Sửa Mở Môn";
-            this.Load += new System.EventHandler(this.EditMommonForm_Load);
+            this.Text = "Thêm Mở Môn Mới";
+            this.Load += new System.EventHandler(this.AddMommonForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
