@@ -41,14 +41,14 @@ namespace TestDB
                 reader.Close();
 
 
-                string query = "SELECT ROLE, PASSWORD_REQUIRED AS PASSWORD_REQ,authentication_type,common FROM dba_roles ORDER BY ROLE"; 
+                string query = "SELECT USERNAME, CREATED, LAST_LOGIN FROM dba_users ORDER BY last_login"; 
 
                 OracleDataAdapter adapter = new OracleDataAdapter(query, conNow);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 dataGridViewUsers.DataSource = dt;
  
-                string query2 = "select * from QLDH.QLDH_sinhvien";
+                string query2 = "SELECT ROLE, PASSWORD_REQUIRED AS PASSWORD_REQ,authentication_type,common FROM dba_roles ORDER BY ROLE";
                 OracleDataAdapter adapter2 = new OracleDataAdapter(query2, conNow);
                 DataTable dt2 = new DataTable();
                 adapter2.Fill(dt2);
