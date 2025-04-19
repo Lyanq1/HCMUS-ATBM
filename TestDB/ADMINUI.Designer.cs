@@ -28,14 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ADMINUI));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ADMINUI));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.revokePrivilTab = new FontAwesome.Sharp.IconButton();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.objPriviTab = new FontAwesome.Sharp.IconButton();
+            this.rolePriviTab = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.userTab = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -52,22 +60,14 @@
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.revokePrivilTab = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.objPriviTab = new FontAwesome.Sharp.IconButton();
-            this.rolePriviTab = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.userTab = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,6 +86,174 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(167, 495);
             this.panel1.TabIndex = 4;
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.iconButton7.AutoSize = true;
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
+            this.iconButton7.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 40;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.Location = new System.Drawing.Point(0, 421);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.iconButton7.Size = new System.Drawing.Size(167, 46);
+            this.iconButton7.TabIndex = 6;
+            this.iconButton7.Text = "Logout";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
+            // 
+            // revokePrivilTab
+            // 
+            this.revokePrivilTab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.revokePrivilTab.FlatAppearance.BorderSize = 0;
+            this.revokePrivilTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.revokePrivilTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.revokePrivilTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.revokePrivilTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
+            this.revokePrivilTab.IconColor = System.Drawing.Color.Gainsboro;
+            this.revokePrivilTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.revokePrivilTab.IconSize = 40;
+            this.revokePrivilTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.revokePrivilTab.Location = new System.Drawing.Point(0, 330);
+            this.revokePrivilTab.Margin = new System.Windows.Forms.Padding(2);
+            this.revokePrivilTab.Name = "revokePrivilTab";
+            this.revokePrivilTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.revokePrivilTab.Size = new System.Drawing.Size(167, 46);
+            this.revokePrivilTab.TabIndex = 5;
+            this.revokePrivilTab.Text = "Revoke Privileges";
+            this.revokePrivilTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.revokePrivilTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.revokePrivilTab.UseVisualStyleBackColor = true;
+            this.revokePrivilTab.Click += new System.EventHandler(this.revokePrivilTab_Click);
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
+            this.iconButton5.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 40;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.Location = new System.Drawing.Point(0, 284);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.iconButton5.Size = new System.Drawing.Size(167, 46);
+            this.iconButton5.TabIndex = 4;
+            this.iconButton5.Text = "Privilege viewer";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            // 
+            // objPriviTab
+            // 
+            this.objPriviTab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.objPriviTab.FlatAppearance.BorderSize = 0;
+            this.objPriviTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.objPriviTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.objPriviTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.objPriviTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
+            this.objPriviTab.IconColor = System.Drawing.Color.Gainsboro;
+            this.objPriviTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.objPriviTab.IconSize = 40;
+            this.objPriviTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.objPriviTab.Location = new System.Drawing.Point(0, 238);
+            this.objPriviTab.Margin = new System.Windows.Forms.Padding(2);
+            this.objPriviTab.Name = "objPriviTab";
+            this.objPriviTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.objPriviTab.Size = new System.Drawing.Size(167, 46);
+            this.objPriviTab.TabIndex = 3;
+            this.objPriviTab.Text = "Object\'s Privileges";
+            this.objPriviTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.objPriviTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.objPriviTab.UseVisualStyleBackColor = true;
+            this.objPriviTab.Click += new System.EventHandler(this.objPriviTab_Click);
+            // 
+            // rolePriviTab
+            // 
+            this.rolePriviTab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rolePriviTab.FlatAppearance.BorderSize = 0;
+            this.rolePriviTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rolePriviTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rolePriviTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.rolePriviTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
+            this.rolePriviTab.IconColor = System.Drawing.Color.Gainsboro;
+            this.rolePriviTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.rolePriviTab.IconSize = 40;
+            this.rolePriviTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rolePriviTab.Location = new System.Drawing.Point(0, 192);
+            this.rolePriviTab.Margin = new System.Windows.Forms.Padding(2);
+            this.rolePriviTab.Name = "rolePriviTab";
+            this.rolePriviTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.rolePriviTab.Size = new System.Drawing.Size(167, 46);
+            this.rolePriviTab.TabIndex = 2;
+            this.rolePriviTab.Text = "Role\'s Privileges";
+            this.rolePriviTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rolePriviTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rolePriviTab.UseVisualStyleBackColor = true;
+            this.rolePriviTab.Click += new System.EventHandler(this.rolePriviTab_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
+            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(0, 146);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.iconButton2.Size = new System.Drawing.Size(167, 46);
+            this.iconButton2.TabIndex = 1;
+            this.iconButton2.Text = "User\'s Privileges";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // userTab
+            // 
+            this.userTab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userTab.FlatAppearance.BorderSize = 0;
+            this.userTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.userTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.userTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
+            this.userTab.IconColor = System.Drawing.Color.Gainsboro;
+            this.userTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.userTab.IconSize = 40;
+            this.userTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.userTab.Location = new System.Drawing.Point(0, 100);
+            this.userTab.Margin = new System.Windows.Forms.Padding(2);
+            this.userTab.Name = "userTab";
+            this.userTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.userTab.Size = new System.Drawing.Size(167, 46);
+            this.userTab.TabIndex = 0;
+            this.userTab.Text = "Users && Roles";
+            this.userTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.userTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.userTab.UseVisualStyleBackColor = true;
+            this.userTab.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // panel2
             // 
@@ -110,6 +278,17 @@
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 18;
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(106, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // directorySearcher1
             // 
@@ -339,196 +518,6 @@
             this.panel3.Size = new System.Drawing.Size(539, 159);
             this.panel3.TabIndex = 34;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(92)))), ((int)(((byte)(232)))));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Location = new System.Drawing.Point(29, 294);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(532, 175);
-            this.panel4.TabIndex = 35;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.iconButton7.AutoSize = true;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.iconButton7.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 40;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 421);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(2);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.iconButton7.Size = new System.Drawing.Size(167, 46);
-            this.iconButton7.TabIndex = 6;
-            this.iconButton7.Text = "Logout";
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = true;
-            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
-            // 
-            // revokePrivilTab
-            // 
-            this.revokePrivilTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.revokePrivilTab.FlatAppearance.BorderSize = 0;
-            this.revokePrivilTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.revokePrivilTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.revokePrivilTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.revokePrivilTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.revokePrivilTab.IconColor = System.Drawing.Color.Gainsboro;
-            this.revokePrivilTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.revokePrivilTab.IconSize = 40;
-            this.revokePrivilTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.revokePrivilTab.Location = new System.Drawing.Point(0, 330);
-            this.revokePrivilTab.Margin = new System.Windows.Forms.Padding(2);
-            this.revokePrivilTab.Name = "revokePrivilTab";
-            this.revokePrivilTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.revokePrivilTab.Size = new System.Drawing.Size(167, 46);
-            this.revokePrivilTab.TabIndex = 5;
-            this.revokePrivilTab.Text = "Revoke Privileges";
-            this.revokePrivilTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.revokePrivilTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.revokePrivilTab.UseVisualStyleBackColor = true;
-            this.revokePrivilTab.Click += new System.EventHandler(this.revokePrivilTab_Click);
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.iconButton5.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 40;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(0, 284);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(2);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.iconButton5.Size = new System.Drawing.Size(167, 46);
-            this.iconButton5.TabIndex = 4;
-            this.iconButton5.Text = "Privilege viewer";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = true;
-            // 
-            // objPriviTab
-            // 
-            this.objPriviTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.objPriviTab.FlatAppearance.BorderSize = 0;
-            this.objPriviTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.objPriviTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.objPriviTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.objPriviTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.objPriviTab.IconColor = System.Drawing.Color.Gainsboro;
-            this.objPriviTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.objPriviTab.IconSize = 40;
-            this.objPriviTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.objPriviTab.Location = new System.Drawing.Point(0, 238);
-            this.objPriviTab.Margin = new System.Windows.Forms.Padding(2);
-            this.objPriviTab.Name = "objPriviTab";
-            this.objPriviTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.objPriviTab.Size = new System.Drawing.Size(167, 46);
-            this.objPriviTab.TabIndex = 3;
-            this.objPriviTab.Text = "Object\'s Privileges";
-            this.objPriviTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.objPriviTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.objPriviTab.UseVisualStyleBackColor = true;
-            this.objPriviTab.Click += new System.EventHandler(this.objPriviTab_Click);
-            // 
-            // rolePriviTab
-            // 
-            this.rolePriviTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rolePriviTab.FlatAppearance.BorderSize = 0;
-            this.rolePriviTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rolePriviTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rolePriviTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.rolePriviTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.rolePriviTab.IconColor = System.Drawing.Color.Gainsboro;
-            this.rolePriviTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.rolePriviTab.IconSize = 40;
-            this.rolePriviTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rolePriviTab.Location = new System.Drawing.Point(0, 192);
-            this.rolePriviTab.Margin = new System.Windows.Forms.Padding(2);
-            this.rolePriviTab.Name = "rolePriviTab";
-            this.rolePriviTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.rolePriviTab.Size = new System.Drawing.Size(167, 46);
-            this.rolePriviTab.TabIndex = 2;
-            this.rolePriviTab.Text = "Role\'s Privileges";
-            this.rolePriviTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rolePriviTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rolePriviTab.UseVisualStyleBackColor = true;
-            this.rolePriviTab.Click += new System.EventHandler(this.rolePriviTab_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 40;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 146);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(167, 46);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "User\'s Privileges";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // userTab
-            // 
-            this.userTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userTab.FlatAppearance.BorderSize = 0;
-            this.userTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.userTab.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.userTab.IconChar = FontAwesome.Sharp.IconChar.PeopleRoof;
-            this.userTab.IconColor = System.Drawing.Color.Gainsboro;
-            this.userTab.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.userTab.IconSize = 40;
-            this.userTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.userTab.Location = new System.Drawing.Point(0, 100);
-            this.userTab.Margin = new System.Windows.Forms.Padding(2);
-            this.userTab.Name = "userTab";
-            this.userTab.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.userTab.Size = new System.Drawing.Size(167, 46);
-            this.userTab.TabIndex = 0;
-            this.userTab.Text = "Users && Roles";
-            this.userTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.userTab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.userTab.UseVisualStyleBackColor = true;
-            this.userTab.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
             // iconButton8
             // 
             this.iconButton8.Font = new System.Drawing.Font("Verdana", 10F);
@@ -544,7 +533,18 @@
             this.iconButton8.UseVisualStyleBackColor = true;
             this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click_1);
             // 
-            // DBAUI
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(92)))), ((int)(((byte)(232)))));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Location = new System.Drawing.Point(29, 294);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(532, 175);
+            this.panel4.TabIndex = 35;
+            // 
+            // ADMINUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -553,18 +553,18 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "DBAUI";
+            this.Name = "ADMINUI";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
