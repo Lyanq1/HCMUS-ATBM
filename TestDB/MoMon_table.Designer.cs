@@ -32,10 +32,12 @@
             // 
             // MoMon_table
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MoMon_table";
-            this.Size = new System.Drawing.Size(1156, 611);
+            this.Size = new System.Drawing.Size(771, 397);
+            this.Load += new System.EventHandler(this.MoMon_table_Load);
             this.ResumeLayout(false);
 
         }

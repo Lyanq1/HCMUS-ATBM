@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using Oracle.ManagedDataAccess.Client;
 
 namespace TestDB
 {
@@ -16,5 +18,18 @@ namespace TestDB
         {
             InitializeComponent();
         }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void MoMon_table_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
+
+

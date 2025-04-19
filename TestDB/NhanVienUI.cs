@@ -32,5 +32,16 @@ namespace TestDB
             this.Close();
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ADMINUI dba = new ADMINUI();
+            dba.Show();
+        }
+
+        private void moMon_table1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

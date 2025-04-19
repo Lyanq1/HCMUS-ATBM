@@ -35,6 +35,7 @@
             this.check = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Grant = new System.Windows.Forms.Button();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.column = new System.Windows.Forms.CheckedListBox();
             this.withGrantOption = new System.Windows.Forms.CheckBox();
@@ -45,7 +46,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.TextBox();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label6
             // 
@@ -135,6 +136,20 @@
             this.Grant.Text = "GRANT";
             this.Grant.UseVisualStyleBackColor = true;
             this.Grant.Click += new System.EventHandler(this.Grant_Click);
+            // 
+            // iconButton8
+            // 
+            this.iconButton8.Font = new System.Drawing.Font("Verdana", 10F);
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton8.IconColor = System.Drawing.Color.Black;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton8.Location = new System.Drawing.Point(704, 421);
+            this.iconButton8.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Size = new System.Drawing.Size(48, 24);
+            this.iconButton8.TabIndex = 21;
+            this.iconButton8.Text = "Exit";
+            this.iconButton8.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -250,20 +265,6 @@
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(123, 26);
             this.Username.TabIndex = 2;
-            // 
-            // iconButton8
-            // 
-            this.iconButton8.Font = new System.Drawing.Font("Verdana", 10F);
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton8.IconColor = System.Drawing.Color.Black;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.Location = new System.Drawing.Point(704, 421);
-            this.iconButton8.Margin = new System.Windows.Forms.Padding(2);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Size = new System.Drawing.Size(48, 24);
-            this.iconButton8.TabIndex = 21;
-            this.iconButton8.Text = "Exit";
-            this.iconButton8.UseVisualStyleBackColor = true;
             // 
             // ObjectPrivileges
             // 
