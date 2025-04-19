@@ -167,6 +167,12 @@
     <Compile Include="RolePrivileges.Designer.cs">
       <DependentUpon>RolePrivileges.cs</DependentUpon>
     </Compile>
+    <Compile Include="SinhVien_HienThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVien_HienThi.Designer.cs">
+      <DependentUpon>SinhVien_HienThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="SinhVien_table.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,6 +221,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RolePrivileges.resx">
       <DependentUpon>RolePrivileges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVien_HienThi.resx">
+      <DependentUpon>SinhVien_HienThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVien_table.resx">
+      <DependentUpon>SinhVien_table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserPrivileges.resx">
       <DependentUpon>UserPrivileges.cs</DependentUpon>
