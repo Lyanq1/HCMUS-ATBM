@@ -26,7 +26,10 @@ namespace TestDB
             // Gọi hàm cấu hình MoMon_table ĐỘNG
             RebuildMoMonTableWithPermissions();
         }
-
+        public NhanVienUI()
+        {
+            InitializeComponent();
+        }
         private void RebuildMoMonTableWithPermissions()
         {
             // Xóa control cũ (nếu có)
@@ -70,6 +73,16 @@ namespace TestDB
        
 
         private void tabSV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sinhVien_table1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NhanVienUI_Load(object sender, EventArgs e)
         {
 
         }

@@ -3,31 +3,87 @@
   "WorkspaceRootPath": "D:\\visual_studio_community\\Project Location\\TestDB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\nhanvienui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\nhanvienui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\nhanvienui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\nhanvienui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\nhanvienui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\nhanvienui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\nhanvienui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\addmommomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\addmommomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\addmommomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\addmommomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\createedituserroleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\createedituserroleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\dangky_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dangky_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\editmommonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\editmommonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\editmommonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\editmommonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\nhanvien_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\nhanvien_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\sinhvien_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\objectprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\objectprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\sinhvien_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\sinhvien_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,36 +91,16 @@
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\sinhvien_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\sinhvien_hienthi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|d:\\visual_studio_community\\project location\\testdb\\testdb\\momon_table.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\momon_table.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\objectprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\objectprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\objectprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\objectprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\momon_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\revokeprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -75,20 +111,12 @@
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\userprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\roleprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\roleprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\revokeprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\revokeprivileges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|D:\\visual_studio_community\\Project Location\\TestDB\\testdb\\dangky_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8808EAC8-6984-46EA-BFD9-05403D876F08}|TestDB\\ATBM_2025_iss05.csproj|solutionrelative:testdb\\dangky_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,49 +126,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NhanVienUI.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs",
-              "RelativeDocumentMoniker": "TestDB\\NhanVienUI.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs [Design]",
-              "RelativeToolTip": "TestDB\\NhanVienUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T09:40:51.356Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SinhVien_table.cs",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs",
-              "RelativeDocumentMoniker": "TestDB\\SinhVien_table.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs",
-              "RelativeToolTip": "TestDB\\SinhVien_table.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAArwFEAAAAAAAAAAAAAAA==",
+              "Title": "AddMommomForm.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\AddMommomForm.cs",
+              "RelativeDocumentMoniker": "TestDB\\AddMommomForm.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\AddMommomForm.cs",
+              "RelativeToolTip": "TestDB\\AddMommomForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T13:02:38.647Z",
+              "WhenOpened": "2025-04-20T19:12:50.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NhanVienUI.cs",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs",
-              "RelativeDocumentMoniker": "TestDB\\NhanVienUI.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs",
-              "RelativeToolTip": "TestDB\\NhanVienUI.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowC4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:02:20.602Z",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\App.config",
+              "RelativeDocumentMoniker": "TestDB\\App.config",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\App.config",
+              "RelativeToolTip": "TestDB\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-20T19:12:45.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LoginUI.cs [Design]",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\LoginUI.cs",
               "RelativeDocumentMoniker": "TestDB\\LoginUI.cs",
@@ -152,57 +168,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "ADMINUI.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\ADMINUI.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs [Design]",
+              "RelativeToolTip": "TestDB\\ADMINUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:38:19.261Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhanVienUI.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\NhanVienUI.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs [Design]",
+              "RelativeToolTip": "TestDB\\NhanVienUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T09:40:51.356Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NhanVienUI.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\NhanVienUI.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\NhanVienUI.cs",
+              "RelativeToolTip": "TestDB\\NhanVienUI.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAApwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T13:02:20.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LoginUI.cs",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\LoginUI.cs",
               "RelativeDocumentMoniker": "TestDB\\LoginUI.cs",
               "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\LoginUI.cs",
               "RelativeToolTip": "TestDB\\LoginUI.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAASwHUAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwJAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T12:56:41.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SinhVien_HienThi.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs",
-              "RelativeDocumentMoniker": "TestDB\\SinhVien_HienThi.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs [Design]",
-              "RelativeToolTip": "TestDB\\SinhVien_HienThi.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "MoMon_table.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs",
+              "RelativeDocumentMoniker": "TestDB\\MoMon_table.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs [Design]",
+              "RelativeToolTip": "TestDB\\MoMon_table.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T13:03:02.611Z",
+              "WhenOpened": "2025-04-19T12:50:47.746Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SinhVien_table.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs",
-              "RelativeDocumentMoniker": "TestDB\\SinhVien_table.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs [Design]",
-              "RelativeToolTip": "TestDB\\SinhVien_table.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "MoMon_table.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs",
+              "RelativeDocumentMoniker": "TestDB\\MoMon_table.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs",
+              "RelativeToolTip": "TestDB\\MoMon_table.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAASwBAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T12:42:02.376Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SinhVien_HienThi.cs",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs",
-              "RelativeDocumentMoniker": "TestDB\\SinhVien_HienThi.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs",
-              "RelativeToolTip": "TestDB\\SinhVien_HienThi.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAjwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T13:03:15.732Z",
+              "WhenOpened": "2025-04-18T18:55:20.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "CreateEditUserRoleForm.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\CreateEditUserRoleForm.cs",
+              "RelativeDocumentMoniker": "TestDB\\CreateEditUserRoleForm.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\CreateEditUserRoleForm.cs [Design]",
+              "RelativeToolTip": "TestDB\\CreateEditUserRoleForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T19:12:45.012Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditMommonForm.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\EditMommonForm.cs",
+              "RelativeDocumentMoniker": "TestDB\\EditMommonForm.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\EditMommonForm.cs",
+              "RelativeToolTip": "TestDB\\EditMommonForm.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAWwDwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T19:12:32.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddMommomForm.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\AddMommomForm.cs",
+              "RelativeDocumentMoniker": "TestDB\\AddMommomForm.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\AddMommomForm.cs [Design]",
+              "RelativeToolTip": "TestDB\\AddMommomForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T19:04:21.133Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Nhanvien_table.cs [Design]",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\Nhanvien_table.cs",
               "RelativeDocumentMoniker": "TestDB\\Nhanvien_table.cs",
@@ -215,40 +293,42 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ADMINUI.cs",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs",
-              "RelativeDocumentMoniker": "TestDB\\ADMINUI.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs",
-              "RelativeToolTip": "TestDB\\ADMINUI.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAMwCsAAABnAAAAAAAAAA==",
+              "Title": "DangKy_table.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DangKy_table.cs",
+              "RelativeDocumentMoniker": "TestDB\\DangKy_table.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DangKy_table.cs [Design]",
+              "RelativeToolTip": "TestDB\\DangKy_table.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:38:25.291Z"
+              "WhenOpened": "2025-04-17T12:42:24.1Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ADMINUI.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs",
-              "RelativeDocumentMoniker": "TestDB\\ADMINUI.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs [Design]",
-              "RelativeToolTip": "TestDB\\ADMINUI.cs [Design]",
+              "DocumentIndex": 15,
+              "Title": "ObjectPrivileges.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ObjectPrivileges.cs",
+              "RelativeDocumentMoniker": "TestDB\\ObjectPrivileges.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ObjectPrivileges.cs [Design]",
+              "RelativeToolTip": "TestDB\\ObjectPrivileges.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:38:19.261Z"
+              "WhenOpened": "2025-04-18T17:41:34.831Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MoMon_table.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs",
-              "RelativeDocumentMoniker": "TestDB\\MoMon_table.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs [Design]",
-              "RelativeToolTip": "TestDB\\MoMon_table.cs [Design]",
+              "DocumentIndex": 13,
+              "Title": "EditMommonForm.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\EditMommonForm.cs",
+              "RelativeDocumentMoniker": "TestDB\\EditMommonForm.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\EditMommonForm.cs [Design]",
+              "RelativeToolTip": "TestDB\\EditMommonForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T12:50:47.746Z"
+              "WhenOpened": "2025-04-20T19:04:24.124Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\Program.cs",
               "RelativeDocumentMoniker": "TestDB\\Program.cs",
@@ -256,34 +336,104 @@
               "RelativeToolTip": "TestDB\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T12:59:12.021Z"
+              "WhenOpened": "2025-04-19T12:59:12.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ObjectPrivileges.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ObjectPrivileges.cs",
-              "RelativeDocumentMoniker": "TestDB\\ObjectPrivileges.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ObjectPrivileges.cs [Design]",
-              "RelativeToolTip": "TestDB\\ObjectPrivileges.cs [Design]",
+              "DocumentIndex": 17,
+              "Title": "UserPrivileges.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs",
+              "RelativeDocumentMoniker": "TestDB\\UserPrivileges.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs [Design]",
+              "RelativeToolTip": "TestDB\\UserPrivileges.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T17:41:34.831Z"
+              "WhenOpened": "2025-04-18T18:53:59.93Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MoMon_table.cs",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs",
-              "RelativeDocumentMoniker": "TestDB\\MoMon_table.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.cs",
-              "RelativeToolTip": "TestDB\\MoMon_table.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "SinhVien_HienThi.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs",
+              "RelativeDocumentMoniker": "TestDB\\SinhVien_HienThi.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs",
+              "RelativeToolTip": "TestDB\\SinhVien_HienThi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T18:55:20.751Z"
+              "WhenOpened": "2025-04-19T13:03:15.732Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
+              "Title": "SinhVien_HienThi.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs",
+              "RelativeDocumentMoniker": "TestDB\\SinhVien_HienThi.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_HienThi.cs [Design]",
+              "RelativeToolTip": "TestDB\\SinhVien_HienThi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T13:03:02.611Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SinhVien_table.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs",
+              "RelativeDocumentMoniker": "TestDB\\SinhVien_table.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs",
+              "RelativeToolTip": "TestDB\\SinhVien_table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T13:02:38.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SinhVien_table.cs [Design]",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs",
+              "RelativeDocumentMoniker": "TestDB\\SinhVien_table.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\SinhVien_table.cs [Design]",
+              "RelativeToolTip": "TestDB\\SinhVien_table.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T12:42:02.376Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MoMon_table.Designer.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.Designer.cs",
+              "RelativeDocumentMoniker": "TestDB\\MoMon_table.Designer.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\MoMon_table.Designer.cs",
+              "RelativeToolTip": "TestDB\\MoMon_table.Designer.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAWwF0AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T19:04:35.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ADMINUI.cs",
+              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs",
+              "RelativeDocumentMoniker": "TestDB\\ADMINUI.cs",
+              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ADMINUI.cs",
+              "RelativeToolTip": "TestDB\\ADMINUI.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAMwCsAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:38:25.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "ObjectPrivileges.cs",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\ObjectPrivileges.cs",
               "RelativeDocumentMoniker": "TestDB\\ObjectPrivileges.cs",
@@ -291,11 +441,12 @@
               "RelativeToolTip": "TestDB\\ObjectPrivileges.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAuwCkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T17:41:36.873Z"
+              "WhenOpened": "2025-04-18T17:41:36.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "RevokePrivileges.cs [Design]",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\RevokePrivileges.cs",
               "RelativeDocumentMoniker": "TestDB\\RevokePrivileges.cs",
@@ -306,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "UserPrivileges.cs",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs",
               "RelativeDocumentMoniker": "TestDB\\UserPrivileges.cs",
@@ -314,22 +465,12 @@
               "RelativeToolTip": "TestDB\\UserPrivileges.cs",
               "ViewState": "AgIAAOkAAAAAAAAAAAAawA8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T19:21:25.87Z"
+              "WhenOpened": "2025-04-18T19:21:25.87Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserPrivileges.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs",
-              "RelativeDocumentMoniker": "TestDB\\UserPrivileges.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\UserPrivileges.cs [Design]",
-              "RelativeToolTip": "TestDB\\UserPrivileges.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T18:53:59.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "RolePrivileges.cs [Design]",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\RolePrivileges.cs",
               "RelativeDocumentMoniker": "TestDB\\RolePrivileges.cs",
@@ -340,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "RevokePrivileges.cs",
               "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\RevokePrivileges.cs",
               "RelativeDocumentMoniker": "TestDB\\RevokePrivileges.cs",
@@ -349,17 +490,6 @@
               "ViewState": "AgIAAJ4AAAAAAAAAAAAAwK8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T13:00:16.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DangKy_table.cs [Design]",
-              "DocumentMoniker": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DangKy_table.cs",
-              "RelativeDocumentMoniker": "TestDB\\DangKy_table.cs",
-              "ToolTip": "D:\\visual_studio_community\\Project Location\\TestDB\\TestDB\\DangKy_table.cs [Design]",
-              "RelativeToolTip": "TestDB\\DangKy_table.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T12:42:24.1Z"
             }
           ]
         }

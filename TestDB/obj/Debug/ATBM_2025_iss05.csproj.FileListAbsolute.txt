@@ -140,3 +140,5 @@ D:\FinalATBM\HCMUS-ATBM\TestDB\obj\Debug\TestDB.SinhVien_HienThi.resources
 D:\FinalATBM\HCMUS-ATBM\TestDB\obj\Debug\TestDB.SinhVien_table.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.SinhVien_HienThi.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.SinhVien_table.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.AddMommonForm.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.EditMommonForm.resources

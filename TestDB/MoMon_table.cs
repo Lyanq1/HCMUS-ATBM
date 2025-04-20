@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using Oracle.ManagedDataAccess.Client;
 
 namespace TestDB
 {
@@ -151,9 +150,11 @@ namespace TestDB
             
         }
 
-        private void MoMon_table_Load(object sender, EventArgs e)
+ 
+
+        private void MoMon_table_Load_1(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
