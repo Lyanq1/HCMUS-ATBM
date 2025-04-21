@@ -128,44 +128,41 @@ namespace TestDB
                 btnUpdatePhone.Enabled = true;
                 txtĐT.Visible = true;
             }
-
         }
 
 
         private void btnUpdatePhone_Click(object sender, EventArgs e)
         {
-            // Kiểm tra xem mã nhân viên đang chọn có phải là của user đang đăng nhập hay không
-            if (txtMANV.Text.Trim() != manld)
+            // Nếu không phải NV TCHC và mã NV không phải của chính mình thì từ chối
+            if (vaitro != "NV TCHC" && txtMANV.Text.Trim() != manld)
             {
                 MessageBox.Show("Bạn chỉ được phép cập nhật số điện thoại của chính mình.");
                 return;
             }
 
-            // Lấy giá trị số điện thoại mới từ TextBox trên form, chẳng hạn txtDT
+            // Lấy giá trị số điện thoại mới
             string newPhone = txtĐT.Text.Trim();
-
-            // Kiểm tra dữ liệu hợp lệ (ví dụ: không để trống)
             if (string.IsNullOrEmpty(newPhone))
             {
                 MessageBox.Show("Vui lòng nhập số điện thoại.");
                 return;
             }
 
-            // Cập nhật cơ sở dữ liệu
+            // Thực hiện UPDATE—NV TCHC có thể cập nhật bất kỳ MANLD nào, NVCB/TRGĐV chỉ của chính họ
             using (OracleConnection conn = new OracleConnection(connStr))
             {
                 conn.Open();
-                OracleCommand cmd = new OracleCommand("UPDATE QLDH.QLDH_NHANVIEN SET DT = :dt WHERE MANLD = :manld", conn);
+                OracleCommand cmd = new OracleCommand(
+                    "UPDATE QLDH.QLDH_NHANVIEN SET DT = :dt WHERE MANLD = :manld", conn);
                 cmd.Parameters.Add("dt", newPhone);
-                cmd.Parameters.Add("manld", manld);
-
+                cmd.Parameters.Add("manld", txtMANV.Text.Trim());
                 cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Cập nhật số điện thoại thành công!");
-                // Sau khi cập nhật thành công, gọi lại LoadDataTheoVaiTro() để refresh dữ liệu trên DataGridView
-                LoadDataTheoVaiTro();
             }
+
+            MessageBox.Show("Cập nhật số điện thoại thành công!");
+            LoadDataTheoVaiTro();
         }
+
 
 
 

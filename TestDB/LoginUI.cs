@@ -81,6 +81,29 @@ namespace TestDB
                     ADMINUI dba = new ADMINUI();
                     dba.Show();
                 }
+                else if (Role.Text == "Sinh Viên") // Thêm case riêng cho sinh viên
+                {
+                    // Kiểm tra có phải sinh viên
+                    OracleCommand cmd = new OracleCommand(
+                        "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username",
+                        con
+                    );
+                    cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
+
+                    if (cmd.ExecuteScalar() != null)
+                    {
+                        MessageBox.Show("Đăng nhập sinh viên thành công");
+                        GiaoDienSV svForm = new GiaoDienSV(connectionString);
+                        svForm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy sinh viên này");
+                        con.Close();
+                        return;
+                    }
+                }
                 else if (Role.Text == "Nhân Viên")
                 {
                     MessageBox.Show("Connect nhân viên thành công");
@@ -99,23 +122,6 @@ namespace TestDB
                     {
                         roleUser = result.ToString();
                     }
-                    else
-                    {
-                        // Kiểm tra SINH VIÊN nếu không tìm thấy NHÂN VIÊN
-                        cmd.CommandText = "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username";
-                        cmd.Parameters.Clear();
-                        cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = username;
-                        if (cmd.ExecuteScalar() != null)
-                        {
-                            roleUser = "SV";
-                        }
-                        else
-                        {
-                            MessageBox.Show("Người dùng không tồn tại");
-                            con.Close();
-                            return;
-                        }
-                    }
 
                     // Xác định form tương ứng dựa trên role
                     Form roleForm;
@@ -128,9 +134,6 @@ namespace TestDB
                         case "TRGĐV":
                         case "NV TCHC":
                             roleForm = new NhanVienUI(connectionString, false, roleUser, username);
-                            break;
-                        case "SV":
-                            roleForm = new GiaoDienSV(connectionString);
                             break;
                         default:
                             MessageBox.Show("Vai trò không hợp lệ");
