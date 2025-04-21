@@ -84,40 +84,10 @@ namespace TestDB
                 else if (Role.Text == "Nhân Viên")
                 {
                     MessageBox.Show("Connect nhân viên thành công");
-                    //OracleCommand command = new OracleCommand("alter session set \"_ORACLE_SCRIPT\"=true", con);
-                    //command.ExecuteNonQuery();
-                    //string sqlRole = "";
-                    //if (role.Text != "Nhân sự" && role.Text != "Trưởng phòng" && role.Text != "Quản lý")
-                    //{
-                    //    sqlRole = "SELECT VAITRO FROM QLDA.V_QLDA_NHANVIEN WHERE MANV = :manv";
-                    //}
-                    //else
-                    //{
-                    //    sqlRole = "SELECT VAITRO FROM QLDA.V_QLDA_NHANVIEN_NS WHERE MANV = :manv";
-                    //}
-                    //OracleCommand command_role = new OracleCommand(sqlRole, con);
-                    //command_role.Parameters.Add(new OracleParameter("manv", username.Text));
-                    //OracleDataReader dr = command_role.ExecuteReader();
-                    //if (dr.Read())
-                    //{
-                    //    roleUser = dr.GetString(0);
-                    //    if (role.Text != roleUser)
-                    //    {
-                    //        MessageBox.Show("Role không khớp với User");
-                    //        con.Dispose();
-                    //        con.Close();
-                    //        OracleConnection.ClearPool(con);
-                    //        return;
-                    //    }
-                    //}
-                    ////this.Hide();
-
-                    //MessageBox.Show("Connect với Oracle thành công");
-                    // Xác định roleUser từ CSDL (giống code cũ)
-                    // Xác định xem có phải NVPDT không
                     string roleUser = "";
-                    string username = Username.Text;// Lấy mã nhân viên từ username
+                    string username = Username.Text;
 
+                    // Kiểm tra NHÂN VIÊN
                     OracleCommand cmd = new OracleCommand(
                         "SELECT VAITRO FROM QLDH.QLDH_NHANVIEN WHERE MANLD = :username",
                         con
@@ -128,44 +98,48 @@ namespace TestDB
                     if (result != null)
                     {
                         roleUser = result.ToString();
-                        bool isNVPDT = (roleUser == "NV PĐT");
-
-                        var roleForm = new NhanVienUI(
-                            connectionString,
-                            isNVPDT,
-                            roleUser,
-                            username
-                        );
-                        roleForm.Show();
                     }
-                  
-                    //switch (roleUser)
-                    //{
-                    //    case "Nhân viên":
-                    //        NVUI.Text = "NHÂN VIÊN";
-                    //        break;
-                    //    case "Quản lý":
-                    //        NVUI.Text = "QUẢN LÝ";
-                    //        break;
-                    //    case "Trưởng phòng":
-                    //        NVUI.Text = "TRƯỞNG PHÒNG";
-                    //        break;
-                    //    case "Tài chính":
-                    //        NVUI.Text = "TÀI CHÍNH";
-                    //        break;
-                    //    case "Nhân sự":
-                    //        NVUI.Text = "NHÂN SỰ";
-                    //        break;
-                    //    case "Trưởng dự án":
-                    //        NVUI.Text = "TRƯỞNG DỰ ÁN";
-                    //        break;
-                    //    case "Giám đốc":
-                    //        NVUI.Text = "GIÁM ĐỐC";
-                    //        break;
-                    //}
+                    else
+                    {
+                        // Kiểm tra SINH VIÊN nếu không tìm thấy NHÂN VIÊN
+                        cmd.CommandText = "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username";
+                        cmd.Parameters.Clear();
+                        cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = username;
+                        if (cmd.ExecuteScalar() != null)
+                        {
+                            roleUser = "SV";
+                        }
+                        else
+                        {
+                            MessageBox.Show("Người dùng không tồn tại");
+                            con.Close();
+                            return;
+                        }
+                    }
 
-                    //NVUI.Show();
-                    //dr.Close();
+                    // Xác định form tương ứng dựa trên role
+                    Form roleForm;
+                    switch (roleUser)
+                    {
+                        case "NV PĐT":
+                            roleForm = new NhanVienUI(connectionString, true, roleUser, username);
+                            break;
+                        case "GV":
+                        case "TRGĐV":
+                        case "NV TCHC":
+                            roleForm = new NhanVienUI(connectionString, false, roleUser, username);
+                            break;
+                        case "SV":
+                            roleForm = new GiaoDienSV(connectionString);
+                            break;
+                        default:
+                            MessageBox.Show("Vai trò không hợp lệ");
+                            con.Close();
+                            return;
+                    }
+
+                    roleForm.Show();
+                    this.Hide(); // Ẩn form đăng nhập
                 }
             }
             catch (OracleException ex)

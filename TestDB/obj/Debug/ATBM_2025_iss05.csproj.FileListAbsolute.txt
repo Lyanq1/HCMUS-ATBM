@@ -139,3 +139,4 @@ C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.exe
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.pdb
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.AddMommonForm.resources
 C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.EditMommonForm.resources
+C:\Users\Admin\HCMUS-ATBM\TestDB\obj\Debug\TestDB.GiaoDienSV.resources

@@ -128,6 +128,7 @@ namespace TestDB
                 btnUpdatePhone.Enabled = true;
                 txtĐT.Visible = true;
             }
+
         }
 
 
