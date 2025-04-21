@@ -81,134 +81,69 @@ namespace TestDB
                     ADMINUI dba = new ADMINUI();
                     dba.Show();
                 }
+                else if (Role.Text == "Sinh Viên") // Thêm case riêng cho sinh viên
+                {
+                    // Kiểm tra có phải sinh viên
+                    OracleCommand cmd = new OracleCommand(
+                        "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username",
+                        con
+                    );
+                    cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
+
+                    if (cmd.ExecuteScalar() != null)
+                    {
+                        MessageBox.Show("Đăng nhập sinh viên thành công");
+                        GiaoDienSV svForm = new GiaoDienSV(connectionString);
+                        svForm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy sinh viên này");
+                        con.Close();
+                        return;
+                    }
+                }
                 else if (Role.Text == "Nhân Viên")
                 {
                     MessageBox.Show("Connect nhân viên thành công");
-                    
-                    NhanVienUI dba = new NhanVienUI(con.ConnectionString, true);
-                    dba.Show();
-                    //OracleCommand command = new OracleCommand("alter session set \"_ORACLE_SCRIPT\"=true", con);
-                    //command.ExecuteNonQuery();
-                    //string sqlRole = "";
-                    //if (role.Text != "Nhân sự" && role.Text != "Trưởng phòng" && role.Text != "Quản lý")
-                    //{
-                    //    sqlRole = "SELECT VAITRO FROM QLDA.V_QLDA_NHANVIEN WHERE MANV = :manv";
-                    //}
-                    //else
-                    //{
-                    //    sqlRole = "SELECT VAITRO FROM QLDA.V_QLDA_NHANVIEN_NS WHERE MANV = :manv";
-                    //}
-                    //OracleCommand command_role = new OracleCommand(sqlRole, con);
-                    //command_role.Parameters.Add(new OracleParameter("manv", username.Text));
-                    //OracleDataReader dr = command_role.ExecuteReader();
-                    //if (dr.Read())
-                    //{
-                    //    roleUser = dr.GetString(0);
-                    //    if (role.Text != roleUser)
-                    //    {
-                    //        MessageBox.Show("Role không khớp với User");
-                    //        con.Dispose();
-                    //        con.Close();
-                    //        OracleConnection.ClearPool(con);
-                    //        return;
-                    //    }
-                    //}
-                    ////this.Hide();
+                    string roleUser = "";
+                    string username = Username.Text;
 
-                    //MessageBox.Show("Connect với Oracle thành công");
-                    // Xác định roleUser từ CSDL (giống code cũ)
-                    // Xác định xem có phải NVPDT không
+                    // Kiểm tra NHÂN VIÊN
+                    OracleCommand cmd = new OracleCommand(
+                        "SELECT VAITRO FROM QLDH.QLDH_NHANVIEN WHERE MANLD = :username",
+                        con
+                    );
+                    cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = username;
+                    var result = cmd.ExecuteScalar();
 
-                    //------------------------------------------------------------------------------------------------------------
-                    //string roleUser = "";
-                    //OracleCommand cmd = new OracleCommand(
-                    //    "SELECT VAITRO FROM QLDH.QLDH_NHANVIEN WHERE MANLD = :username",
-                    //    con
-                    //);
-                    //cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
-                    //var result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        roleUser = result.ToString();
+                    }
 
-                    //// Kiểm tra role NHÂN VIÊN
-                    //if (result != null)
-                    //{
-                    //    roleUser = result.ToString();
-                    //}
-                    //else
-                    //{
-                    //    // Kiểm tra có phải SINH VIÊN không (nếu cần)
-                    //    cmd.CommandText = "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username";
-                    //    cmd.Parameters.Clear();
-                    //    cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
-                    //    if (cmd.ExecuteScalar() != null)
-                    //    {
-                    //        roleUser = "SV";
-                    //    }
-                    //    else
-                    //    {
-                    //        MessageBox.Show("Người dùng không tồn tại");
-                    //        con.Close();
-                    //        return;
-                    //    }
-                    //}
+                    // Xác định form tương ứng dựa trên role
+                    Form roleForm;
+                    switch (roleUser)
+                    {
+                        case "NV PĐT":
+                            roleForm = new NhanVienUI(connectionString, true, roleUser, username);
+                            break;
+                        case "GV":
+                        case "TRGĐV":
+                        case "NV TCHC":
+                            roleForm = new NhanVienUI(connectionString, false, roleUser, username);
+                            break;
+                        default:
+                            MessageBox.Show("Vai trò không hợp lệ");
+                            con.Close();
+                            return;
+                    }
 
-
-
-                    //// Phân quyền và mở form tương ứng
-                    //Form roleForm;
-                    //switch (roleUser)
-                    //{
-                    //    case "GV":
-                    //        roleForm = new NhanVienUI(connectionString, false);
-                    //        break;
-                    //    case "NV PĐT":
-                    //        roleForm = new NhanVienUI(connectionString, true); // Hoặc NhanVienUI với isNVPDT = true
-                    //        break;
-                    //    case "TRGĐV":
-                    //        roleForm = new NhanVienUI(connectionString, false);
-                    //        break;
-                    //    case "SV":
-                    //        roleForm = new NhanVienUI(connectionString, false);
-                    //        break;
-                    //    default:
-                    //        MessageBox.Show("Vai trò không hợp lệ");
-                    //        con.Close();
-                    //        return;
-                    //}
-
-                    //roleForm.Show();
-                    //this.Hide();
-                    //------------------------------------------------------------------------------------------------------------
-                    //switch (roleUser)
-                    //{
-                    //    case "Nhân viên":
-                    //        NVUI.Text = "NHÂN VIÊN";
-                    //        break;
-                    //    case "Quản lý":
-                    //        NVUI.Text = "QUẢN LÝ";
-                    //        break;
-                    //    case "Trưởng phòng":
-                    //        NVUI.Text = "TRƯỞNG PHÒNG";
-                    //        break;
-                    //    case "Tài chính":
-                    //        NVUI.Text = "TÀI CHÍNH";
-                    //        break;
-                    //    case "Nhân sự":
-                    //        NVUI.Text = "NHÂN SỰ";
-                    //        break;
-                    //    case "Trưởng dự án":
-                    //        NVUI.Text = "TRƯỞNG DỰ ÁN";
-                    //        break;
-                    //    case "Giám đốc":
-                    //        NVUI.Text = "GIÁM ĐỐC";
-                    //        break;
-                    //}
-
-                    //NVUI.Show();
-                    //dr.Close();
+                    roleForm.Show();
+                    this.Hide(); // Ẩn form đăng nhập
                 }
-
-
-                this.Hide();
             }
             catch (OracleException ex)
             {

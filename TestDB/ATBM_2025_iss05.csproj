@@ -135,6 +135,12 @@
     <Compile Include="EditMommonForm.Designer.cs">
       <DependentUpon>EditMommonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDienSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDienSV.Designer.cs">
+      <DependentUpon>GiaoDienSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditMommonForm.resx">
       <DependentUpon>EditMommonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDienSV.resx">
+      <DependentUpon>GiaoDienSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
