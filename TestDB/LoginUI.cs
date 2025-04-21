@@ -116,62 +116,29 @@ namespace TestDB
                     // Xác định roleUser từ CSDL (giống code cũ)
                     // Xác định xem có phải NVPDT không
                     string roleUser = "";
+                    string username = Username.Text;// Lấy mã nhân viên từ username
+
                     OracleCommand cmd = new OracleCommand(
                         "SELECT VAITRO FROM QLDH.QLDH_NHANVIEN WHERE MANLD = :username",
                         con
                     );
-                    cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
+                    cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = username;
                     var result = cmd.ExecuteScalar();
 
-                    // Kiểm tra role NHÂN VIÊN
                     if (result != null)
                     {
                         roleUser = result.ToString();
-                    }
-                    else
-                    {
-                        // Kiểm tra có phải SINH VIÊN không (nếu cần)
-                        cmd.CommandText = "SELECT MASV FROM QLDH.QLDH_SINHVIEN WHERE MASV = :username";
-                        cmd.Parameters.Clear();
-                        cmd.Parameters.Add("username", OracleDbType.Varchar2).Value = Username.Text;
-                        if (cmd.ExecuteScalar() != null)
-                        {
-                            roleUser = "SV";
-                        }
-                        else
-                        {
-                            MessageBox.Show("Người dùng không tồn tại");
-                            con.Close();
-                            return;
-                        }
-                    }
+                        bool isNVPDT = (roleUser == "NV PĐT");
 
-                    
-
-                    // Phân quyền và mở form tương ứng
-                    Form roleForm;
-                    switch (roleUser)
-                    {
-                        case "GV":
-                            roleForm = new NhanVienUI(connectionString, false);
-                            break;
-                        case "NV PĐT":
-                            roleForm = new NhanVienUI(connectionString, true); // Hoặc NhanVienUI với isNVPDT = true
-                            break;
-                        case "TRGĐV":
-                            roleForm = new NhanVienUI(connectionString, false);
-                            break;
-                        case "SV":
-                            roleForm = new NhanVienUI(connectionString, false);
-                            break;
-                        default:
-                            MessageBox.Show("Vai trò không hợp lệ");
-                            con.Close();
-                            return;
+                        var roleForm = new NhanVienUI(
+                            connectionString,
+                            isNVPDT,
+                            roleUser,
+                            username
+                        );
+                        roleForm.Show();
                     }
-
-                    roleForm.Show();
-                    this.Hide();
+                  
                     //switch (roleUser)
                     //{
                     //    case "Nhân viên":
@@ -200,9 +167,6 @@ namespace TestDB
                     //NVUI.Show();
                     //dr.Close();
                 }
-
-
-                this.Hide();
             }
             catch (OracleException ex)
             {
