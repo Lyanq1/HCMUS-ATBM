@@ -98,7 +98,12 @@ namespace TestDB
         private void button8_Click(object sender, EventArgs e) { }
         private void iconButton1_Click(object sender, EventArgs e) 
         {
-            //LoadFormIntoPanel(new DBAUI());
+            // Open Users & Roles form in a new standalone window
+            ADMINUI usersForm = new ADMINUI(); // Replace with your actual form class
+            usersForm.Show();
+
+            // Optionally close current form if you want to hide the sidebar completely
+            this.Close();
         }
         private void iconPictureBox1_Click(object sender, EventArgs e) { }
         private void label3_Click(object sender, EventArgs e) { }
@@ -143,7 +148,11 @@ namespace TestDB
         {
             LoadFormIntoPanel(new UserPrivileges());
         }
-
+        //tab_privil_view
+        private void tabPrivilView_Click(object sender, EventArgs e)
+        {
+            LoadFormIntoPanel(new PrivilViewer());
+        }
         private void rolePriviTab_Click(object sender, EventArgs e)
         {
             LoadFormIntoPanel(new RolePrivileges());

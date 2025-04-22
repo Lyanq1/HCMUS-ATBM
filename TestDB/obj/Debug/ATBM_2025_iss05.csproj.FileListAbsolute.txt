@@ -144,3 +144,7 @@ D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.AddMo
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.EditMommonForm.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.GiaoDienSV.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.OLSForm.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.DangKy_table.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.SinhVienUI.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.revokeForm.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.PrivilViewer.resources

@@ -80,11 +80,6 @@ namespace TestDB
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ADMINUI dba = new ADMINUI();
-            dba.Show();
-        }
 
         private void moMon_table1_Load(object sender, EventArgs e)
         {
@@ -111,224 +106,69 @@ namespace TestDB
         private void button2_Click(object sender, EventArgs e)
         {
             //GrantOLSPermissions();
-            //OLSForm olsForm = new OLSForm();
-            //olsForm.Show();
+            OLSForm olsForm = new OLSForm();
+            olsForm.Show();
         }
-        private void GrantOLSPermissions()
+
+        private void dangKy_table1_Load(object sender, EventArgs e)
         {
-            try
-            {
-                // Check if the user already has permission to the THONGBAO table
-                // If not, grant the necessary permissions
-                string checkPermissionQuery = @"
-            SELECT COUNT(*) 
-            FROM DBA_TAB_PRIVS 
-            WHERE GRANTEE = :username 
-            AND TABLE_NAME = 'THONGBAO' 
-            AND PRIVILEGE = 'SELECT'"
-                ;
 
-                OracleCommand checkCmd = new OracleCommand(checkPermissionQuery, con);
-                checkCmd.Parameters.Add(new OracleParameter("username", LoginUI.userUser));
-
-                int permissionCount = Convert.ToInt32(checkCmd.ExecuteScalar());
-
-                // If user doesn't have permissions, grant them using ADMIN_OLS account
-                if (permissionCount == 0)
-                {
-                    // We need to connect as ADMIN_OLS to grant permissions
-                    OracleConnection adminCon = new OracleConnection();
-                    adminCon.ConnectionString = @"DATA SOURCE = localhost:1521/XEPDB1; User Id=OLS_ADMIN;Password=123";
-                    adminCon.Open();
-
-                    // Grant SELECT on THONGBAO table
-                    string grantSelectQuery = $"GRANT SELECT ON THONGBAO TO {LoginUI.userUser}";
-                    OracleCommand grantCmd = new OracleCommand(grantSelectQuery, adminCon);
-                    grantCmd.ExecuteNonQuery();
-
-                    // Grant inherit privileges
-                    string grantInheritQuery = $"GRANT INHERIT PRIVILEGES ON USER OLS_ADMIN TO {LoginUI.userUser}";
-                    OracleCommand inheritCmd = new OracleCommand(grantInheritQuery, adminCon);
-                    inheritCmd.ExecuteNonQuery();
-
-                    // Close the admin connection
-                    adminCon.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi khi cấp quyền: {ex.Message}");
-            }
         }
+
+        private void tabDangKy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabSinhVien_Click(object sender, EventArgs e)
+        {
+
+        }
+        //private void GrantOLSPermissions()
+        //{
+        //    try
+        //    {
+        //        // Check if the user already has permission to the THONGBAO table
+        //        // If not, grant the necessary permissions
+        //        string checkPermissionQuery = @"
+        //    SELECT COUNT(*) 
+        //    FROM DBA_TAB_PRIVS 
+        //    WHERE GRANTEE = :username 
+        //    AND TABLE_NAME = 'THONGBAO' 
+        //    AND PRIVILEGE = 'SELECT'"
+        //        ;
+
+        //        OracleCommand checkCmd = new OracleCommand(checkPermissionQuery, con);
+        //        checkCmd.Parameters.Add(new OracleParameter("username", LoginUI.userUser));
+
+        //        int permissionCount = Convert.ToInt32(checkCmd.ExecuteScalar());
+
+        //        // If user doesn't have permissions, grant them using ADMIN_OLS account
+        //        if (permissionCount == 0)
+        //        {
+        //            // We need to connect as ADMIN_OLS to grant permissions
+        //            OracleConnection adminCon = new OracleConnection();
+        //            adminCon.ConnectionString = @"DATA SOURCE = localhost:1521/XEPDB1; User Id=OLS_ADMIN;Password=123";
+        //            adminCon.Open();
+
+        //            // Grant SELECT on THONGBAO table
+        //            string grantSelectQuery = $"GRANT SELECT ON THONGBAO TO {LoginUI.userUser}";
+        //            OracleCommand grantCmd = new OracleCommand(grantSelectQuery, adminCon);
+        //            grantCmd.ExecuteNonQuery();
+
+        //            // Grant inherit privileges
+        //            string grantInheritQuery = $"GRANT INHERIT PRIVILEGES ON USER OLS_ADMIN TO {LoginUI.userUser}";
+        //            OracleCommand inheritCmd = new OracleCommand(grantInheritQuery, adminCon);
+        //            inheritCmd.ExecuteNonQuery();
+
+        //            // Close the admin connection
+        //            adminCon.Close();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show($"Lỗi khi cấp quyền: {ex.Message}");
+        //    }
+        //}
     }
 }
-
-
-
-//namespace TestDB
-//{
-//    public partial class LoginUI : Form
-//    {
-//        public LoginUI()
-//        {
-//            InitializeComponent();
-//        }
-
-//        private void label1_Click(object sender, EventArgs e)
-//        {
-
-//        }
-
-//        private void LoginUI_Load(object sender, EventArgs e)
-//        {
-
-//        }
-//        private void Username_TextChanged(object sender, EventArgs e)
-//        {
-
-//        }
-
-//        private void Password_TextChanged(object sender, EventArgs e)
-//        {
-
-//        }
-//        public static OracleConnection con;
-//        public static String userUser;
-//        public static String passUser;
-//        public static String roleUser;
-//        private void button1_Click(object sender, EventArgs e)
-//        {
-//            if (Username.Text.Length == 0)
-//            {
-//                MessageBox.Show("TÊN ĐĂNG NHẬP không được để trống.");
-//                return;
-//            }
-//            if (Password.Text.Length == 0)
-//            {
-//                MessageBox.Show("MẬT KHẨU không được để trống.");
-//                return;
-//            }
-//            if (Role.Text.Length == 0)
-//            {
-//                MessageBox.Show("VAI TRÒ không được để trống.");
-//                return;
-//            }
-//            try
-//            {
-//                string connectionString = "";
-//                connectionString = @"DATA SOURCE = localhost:1521/XEPDB1; User Id=" + Username.Text + ";Password=" + Password.Text;
-
-//                con = new OracleConnection();
-//                con.ConnectionString = connectionString;
-//                con.Open();
-
-//                userUser = Username.Text;
-//                passUser = Password.Text;
-//                roleUser = Role.Text;
-
-//                GrantOLSPermissions();
-
-//                if (Role.Text == "ADMIN")
-//                {
-
-//                    //OracleCommand command = new OracleCommand("alter session set \"_ORACLE_SCRIPT\"=true", con);
-//                    //command.ExecuteNonQuery();
-//                    MessageBox.Show("Connect với Oracle thành công");
-//                    ADMINUI dba = new ADMINUI();
-//                    dba.Show();
-//                }
-//                if (Role.Text == "ADMIN")
-//                {
-//                    MessageBox.Show("Connect với Oracle thành công");
-//                    ADMINUI dba = new ADMINUI();
-//                    dba.Show();
-
-//                    // Also open the OLS form
-//                    OLSForm olsForm = new OLSForm();
-//                    olsForm.Show();
-//                }
-//                else if (Role.Text == "Nhân Viên")
-//                {
-//                    MessageBox.Show("Connect nhân viên thành công");
-//                    NhanVienUI NVUI = new NhanVienUI();
-//                    NVUI.Show();
-
-//                    // Also open the OLS form
-//                    OLSForm olsForm = new OLSForm();
-//                    olsForm.Show();
-//                }
-//                else if (Role.Text == "Sinh Viên")
-//                {
-//                    MessageBox.Show("Connect sinh viên thành công");
-//                    NhanVienUI NVUI = new NhanVienUI();
-//                    NVUI.Show();
-
-//                    // Also open the OLS form
-//                    OLSForm olsForm = new OLSForm();
-//                    olsForm.Show();
-//                }
-//            }
-//            catch (OracleException ex)
-//            {
-//                MessageBox.Show(ex.Message);
-//                return;
-//            }
-//        }
-
-//        private void iconButton8_Click(object sender, EventArgs e)
-//        {
-//            this.Close();
-//            Application.Exit();
-//        }
-
-//        private void Role_SelectedIndexChanged(object sender, EventArgs e)
-//        {
-
-//        }
-//        private void GrantOLSPermissions()
-//        {
-//            try
-//            {
-//                // Check if the user already has permission to the THONGBAO table
-//                // If not, grant the necessary permissions
-//                string checkPermissionQuery = @"
-//            SELECT COUNT(*) 
-//            FROM DBA_TAB_PRIVS 
-//            WHERE GRANTEE = :username 
-//            AND TABLE_NAME = 'THONGBAO' 
-//            AND PRIVILEGE = 'SELECT'";
-
-//                OracleCommand checkCmd = new OracleCommand(checkPermissionQuery, con);
-//                checkCmd.Parameters.Add(new OracleParameter("username", Username.Text));
-
-//                int permissionCount = Convert.ToInt32(checkCmd.ExecuteScalar());
-
-//                // If user doesn't have permissions, grant them using ADMIN_OLS account
-//                if (permissionCount == 0)
-//                {
-//                    // We need to connect as ADMIN_OLS to grant permissions
-//                    OracleConnection adminCon = new OracleConnection();
-//                    adminCon.ConnectionString = @"DATA SOURCE = localhost:1521/XEPDB1; User Id=ADMIN_OLS;Password=123";
-//                    adminCon.Open();
-
-//                    // Grant SELECT on THONGBAO table
-//                    string grantSelectQuery = $"GRANT SELECT ON THONGBAO TO {Username.Text}";
-//                    OracleCommand grantCmd = new OracleCommand(grantSelectQuery, adminCon);
-//                    grantCmd.ExecuteNonQuery();
-
-//                    // Grant inherit privileges
-//                    string grantInheritQuery = $"GRANT INHERIT PRIVILEGES ON USER ADMIN_OLS TO {Username.Text}";
-//                    OracleCommand inheritCmd = new OracleCommand(grantInheritQuery, adminCon);
-//                    inheritCmd.ExecuteNonQuery();
-
-//                    // Close the admin connection
-//                    adminCon.Close();
-//                }
-//            }
-//            catch (Exception ex)
-//            {
-//                MessageBox.Show($"Lỗi khi cấp quyền: {ex.Message}");
-//            }
-//        }
-//    }
-//}
