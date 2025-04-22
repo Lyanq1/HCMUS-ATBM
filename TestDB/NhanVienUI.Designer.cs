@@ -35,7 +35,8 @@
             this.tabSV = new System.Windows.Forms.TabPage();
             this.sinhVien_table1 = new TestDB.SinhVien_table();
             this.exit = new System.Windows.Forms.Button();
-            this.moMon_table1 = new TestDB.MoMon_table();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.NhanVienTab.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabSV.SuspendLayout();
@@ -45,42 +46,33 @@
             // 
             this.NhanVienTab.Controls.Add(this.tabPage1);
             this.NhanVienTab.Controls.Add(this.tabPage2);
-            this.NhanVienTab.Location = new System.Drawing.Point(12, 22);
-            this.NhanVienTab.Margin = new System.Windows.Forms.Padding(4);
+            this.NhanVienTab.Location = new System.Drawing.Point(18, 43);
+            this.NhanVienTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.NhanVienTab.Name = "NhanVienTab";
             this.NhanVienTab.SelectedIndex = 0;
-            this.NhanVienTab.Size = new System.Drawing.Size(1052, 544);
+            this.NhanVienTab.Size = new System.Drawing.Size(1157, 605);
             this.NhanVienTab.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1044, 515);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage1.Size = new System.Drawing.Size(1148, 581);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nhân Viên";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // nhanvien_table1
-            // 
-            this.nhanvien_table1.Location = new System.Drawing.Point(2, 0);
-            this.nhanvien_table1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.nhanvien_table1.Name = "nhanvien_table1";
-            this.nhanvien_table1.Size = new System.Drawing.Size(769, 395);
-            this.nhanvien_table1.TabIndex = 0;
-            this.nhanvien_table1.Load += new System.EventHandler(this.nhanvien_table1_Load);
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.moMon_table1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1044, 515);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage2.Size = new System.Drawing.Size(1149, 572);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mở Môn";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -88,9 +80,8 @@
             // moMon_table1
             // 
             this.moMon_table1.Location = new System.Drawing.Point(0, 0);
-            this.moMon_table1.Margin = new System.Windows.Forms.Padding(2);
             this.moMon_table1.Name = "moMon_table1";
-            this.moMon_table1.Size = new System.Drawing.Size(771, 397);
+            this.moMon_table1.Size = new System.Drawing.Size(1156, 611);
             this.moMon_table1.TabIndex = 0;
             this.moMon_table1.Load += new System.EventHandler(this.moMon_table1_Load);
             // 
@@ -117,32 +108,42 @@
             // 
             // exit
             // 
-            this.exit.Location = new System.Drawing.Point(726, 427);
-            this.exit.Margin = new System.Windows.Forms.Padding(2);
+            this.exit.Location = new System.Drawing.Point(1089, 657);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(57, 21);
+            this.exit.Size = new System.Drawing.Size(86, 32);
             this.exit.TabIndex = 1;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
-            // moMon_table1
+            // button2
             // 
-            this.moMon_table1.Location = new System.Drawing.Point(0, 0);
-            this.moMon_table1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.moMon_table1.Name = "moMon_table1";
-            this.moMon_table1.Size = new System.Drawing.Size(1028, 489);
-            this.moMon_table1.TabIndex = 0;
-            this.moMon_table1.Load += new System.EventHandler(this.moMon_table1_Load);
+            this.button2.Location = new System.Drawing.Point(1008, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(132, 31);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Xem thông báo";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(965, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 3;
             // 
             // NhanVienUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.NhanVienTab);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "NhanVienUI";
             this.Text = "NhanVien";
             this.Load += new System.EventHandler(this.NhanVienUI_Load);
@@ -150,6 +151,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabSV.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -163,5 +165,7 @@
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.TabPage tabSV;
         private SinhVien_table sinhVien_table1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
     }
 }

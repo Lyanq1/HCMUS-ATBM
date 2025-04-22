@@ -133,6 +133,7 @@ namespace TestDB
                         case "GV":
                         case "TRGĐV":
                         case "NV TCHC":
+                        case "NVCB":
                             roleForm = new NhanVienUI(connectionString, false, roleUser, username);
                             break;
                         default:

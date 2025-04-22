@@ -171,6 +171,12 @@
     <Compile Include="ObjectPrivileges.Designer.cs">
       <DependentUpon>ObjectPrivileges.cs</DependentUpon>
     </Compile>
+    <Compile Include="OLSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OLSForm.Designer.cs">
+      <DependentUpon>OLSForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RevokePrivileges.cs">
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ObjectPrivileges.resx">
       <DependentUpon>ObjectPrivileges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OLSForm.resx">
+      <DependentUpon>OLSForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

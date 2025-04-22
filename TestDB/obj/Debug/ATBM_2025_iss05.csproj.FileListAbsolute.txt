@@ -142,3 +142,5 @@ D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.SinhV
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.SinhVien_table.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.AddMommonForm.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.EditMommonForm.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.GiaoDienSV.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.OLSForm.resources
