@@ -1,4 +1,4 @@
-﻿namespace TestDB
+namespace TestDB
 {
     partial class Nhanvien_table
     {
@@ -58,18 +58,19 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 11);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(814, 217);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+
+           this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+          | System.Windows.Forms.AnchorStyles.Left)
+          | System.Windows.Forms.AnchorStyles.Right)));
+          this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+          this.dataGridView1.Location = new System.Drawing.Point(11, 11);
+          this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+          this.dataGridView1.Name = "dataGridView1";
+          this.dataGridView1.RowHeadersWidth = 51;
+          this.dataGridView1.RowTemplate.Height = 28;
+          this.dataGridView1.Size = new System.Drawing.Size(814, 217);
+          this.dataGridView1.TabIndex = 0;
+          this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnUpdatePhone
             // 

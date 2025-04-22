@@ -1,4 +1,3 @@
-﻿// Nhanvien_table.cs
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Data;
