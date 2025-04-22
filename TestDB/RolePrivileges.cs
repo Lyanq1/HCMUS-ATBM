@@ -105,5 +105,11 @@ namespace TestDB
                 return;
             }   
         }
+
+        private void btnRevoke_Click(object sender, EventArgs e)
+        {
+            revokeForm revoke = new revokeForm();
+            revoke.Show();
+        }
     }
 }

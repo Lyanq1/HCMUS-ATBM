@@ -150,11 +150,10 @@ namespace TestDB
             
         }
 
- 
-
-        private void MoMon_table_Load_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            //OLSForm olsForm = new OLSForm();
+            //olsForm.Show();
         }
     }
 }
