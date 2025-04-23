@@ -60,19 +60,26 @@ namespace TestDB
         {
             try
             {
-                using (var conn = new OracleConnection(_connectionString))
-                {
-                    await conn.OpenAsync();
-                    var adapter = new OracleDataAdapter("SELECT * FROM QLDH.QLDH_MOMON", conn);
-                    var dt = new DataTable();
-                    adapter.Fill(dt);
+                //using (var conn = new OracleConnection(_connectionString))
+                //{
+                //    await conn.OpenAsync();
+                //    var adapter = new OracleDataAdapter("SELECT * FROM QLDH.QLDH_MOMON", conn);
+                //    var dt = new DataTable();
+                //    adapter.Fill(dt);
 
-                    dataGridView1.Invoke((MethodInvoker)delegate
-                    {
-                        dataGridView1.DataSource = dt;
-                        dataGridView1.Refresh();
-                    });
-                }
+                //    dataGridView1.Invoke((MethodInvoker)delegate
+                //    {
+                //        dataGridView1.DataSource = dt;
+                //        dataGridView1.Refresh();
+                //    });
+                //}
+                string sql = "SELECT * FROM QLDH.QLDH_MOMON";
+
+                OracleDataAdapter da = new OracleDataAdapter(sql, LoginUI.con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                dataGridView1.Refresh();
             }
             catch (Exception ex)
             {

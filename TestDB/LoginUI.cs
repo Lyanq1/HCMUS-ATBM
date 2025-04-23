@@ -93,7 +93,7 @@ namespace TestDB
                     if (cmd.ExecuteScalar() != null)
                     {
                         MessageBox.Show("Đăng nhập sinh viên thành công");
-                        GiaoDienSV svForm = new GiaoDienSV(connectionString);
+                        SinhVienUI svForm = new SinhVienUI();
                         svForm.Show();
                         this.Hide();
                     }
@@ -131,6 +131,8 @@ namespace TestDB
                             roleForm = new NhanVienUI(connectionString, true, roleUser, username);
                             break;
                         case "GV":
+                            roleForm = new GIAOVIENUI(connectionString, true, roleUser, username);
+                            break;
                         case "TRGĐV":
                         case "NV TCHC":
                         case "NVCB":

@@ -121,6 +121,10 @@ namespace TestDB
 
                     // Thực hiện lệnh DDL
                     cmd.ExecuteNonQuery();
+                    var grant = new OracleCommand();
+                    grant.Connection = _connection;
+                    grant.CommandText = $"Grant connect to {name}";
+                    grant.ExecuteNonQuery();
                 }
 
                 MessageBox.Show("Thao tác thành công!");
