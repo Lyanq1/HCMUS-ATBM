@@ -103,7 +103,6 @@
             this.tabDangKy.TabIndex = 2;
             this.tabDangKy.Text = "Đăng Ký";
             this.tabDangKy.UseVisualStyleBackColor = true;
-            this.tabDangKy.Click += new System.EventHandler(this.tabDangKy_Click);
             // 
             // dangKy_table1
             // 

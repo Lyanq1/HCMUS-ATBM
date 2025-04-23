@@ -32,10 +32,5 @@ namespace TestDB
         {
 
         }
-
-        private void tabDangKy_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

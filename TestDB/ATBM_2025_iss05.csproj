@@ -141,6 +141,12 @@
     <Compile Include="GiaoDienSV.Designer.cs">
       <DependentUpon>GiaoDienSV.cs</DependentUpon>
     </Compile>
+    <Compile Include="GIAOVIENUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAOVIENUI.Designer.cs">
+      <DependentUpon>GIAOVIENUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDienSV.resx">
       <DependentUpon>GiaoDienSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAOVIENUI.resx">
+      <DependentUpon>GIAOVIENUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>

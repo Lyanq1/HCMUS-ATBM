@@ -149,3 +149,4 @@ D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.SinhV
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.revokeForm.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.PrivilViewer.resources
 D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.MoMon_SinhVien.resources
+D:\visual_studio_community\Project Location\TestDB\TestDB\obj\Debug\TestDB.GIAOVIENUI.resources
