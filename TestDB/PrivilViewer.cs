@@ -21,6 +21,38 @@ namespace TestDB
         private void PrivilViewer_Load(object sender, EventArgs e)
         {
             LoadUsersAndRoles();
+            string query = "SELECT GRANTEE, OWNER, TABLE_NAME, PRIVILEGE, GRANTABLE  FROM DBA_TAB_PRIVS where owner = 'QLDH'";
+
+            try
+            {
+                OracleCommand cmd = new OracleCommand(query, LoginUI.con); // kết nối dùng chung
+                OracleDataAdapter adapter = new OracleDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridView1.DataSource = dt;
+            }
+                catch (OracleException ex)
+            {
+                MessageBox.Show("Lỗi khi truy vấn quyền: " + ex.Message);
+            }
+
+            try
+            {
+                // Bạn có thể sửa lại câu truy vấn này để tách riêng user và role nếu muốn
+                string query2 = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%'";
+
+                OracleCommand cmd1 = new OracleCommand(query2, LoginUI.con); // kết nối dùng chung
+                OracleDataAdapter adapter = new OracleDataAdapter(cmd1);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridView2.DataSource = dt;
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show("Lỗi khi load user/role: " + ex.Message);
+            }
         }
         
         private void LoadUsersAndRoles()
@@ -44,6 +76,8 @@ namespace TestDB
             {
                 MessageBox.Show("Lỗi khi load user/role: " + ex.Message);
             }
+
+
         }
 
         private void btnViewPrivileges_Click_1(object sender, EventArgs e)
@@ -52,9 +86,9 @@ namespace TestDB
                 string selectedName = comboBox1.SelectedItem.ToString().ToUpper();
 
                 string query = $@"
-        SELECT GRANTEE, OWNER, TABLE_NAME, PRIVILEGE, GRANTABLE 
-        FROM DBA_TAB_PRIVS 
-        WHERE GRANTEE = '{selectedName}'";
+                SELECT GRANTEE, OWNER, TABLE_NAME, PRIVILEGE, GRANTABLE 
+                FROM DBA_TAB_PRIVS 
+                WHERE GRANTEE = '{selectedName}'";
 
                 try
                 {
@@ -69,7 +103,50 @@ namespace TestDB
                 {
                     MessageBox.Show("Lỗi khi truy vấn quyền: " + ex.Message);
                 }
+
+
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT GRANTEE, OWNER, TABLE_NAME, PRIVILEGE, GRANTABLE  FROM DBA_TAB_PRIVS where owner = 'QLDH'";
+
+            try
+            {
+                OracleCommand cmd = new OracleCommand(query, LoginUI.con); // kết nối dùng chung
+                OracleDataAdapter adapter = new OracleDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridView1.DataSource = dt;
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show("Lỗi khi truy vấn quyền: " + ex.Message);
+            }
+
+            try
+            {
+                // Bạn có thể sửa lại câu truy vấn này để tách riêng user và role nếu muốn
+                string query2 = "select * from DBA_TAB_PRIVS where TABLE_NAME LIKE 'QLDH_%' OR TABLE_NAME LIKE 'V_QLDH_%'";
+
+                OracleCommand cmd1 = new OracleCommand(query2, LoginUI.con); // kết nối dùng chung
+                OracleDataAdapter adapter = new OracleDataAdapter(cmd1);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridView2.DataSource = dt;
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show("Lỗi khi load user/role: " + ex.Message);
+            }
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

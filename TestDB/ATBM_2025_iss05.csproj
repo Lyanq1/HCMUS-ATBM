@@ -147,6 +147,12 @@
     <Compile Include="LoginUI.Designer.cs">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="MoMon_SinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoMon_SinhVien.Designer.cs">
+      <DependentUpon>MoMon_SinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="MoMon_table.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoMon_SinhVien.resx">
+      <DependentUpon>MoMon_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MoMon_table.resx">
       <DependentUpon>MoMon_table.cs</DependentUpon>

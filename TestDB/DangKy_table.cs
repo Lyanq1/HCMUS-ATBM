@@ -15,17 +15,23 @@ namespace TestDB
         public DangKy_table()
         {
             InitializeComponent();
-        }
+            
 
+        }
+        public static OracleConnection conNow = LoginUI.con;
         private void DangKy_table_Load(object sender, EventArgs e)
         {
-            //string query = "select * from QLDH.QLDH_DANGKY;";
+            string query = "select * from QLDH.QLDH_DANGKY";
 
-            //OracleDataAdapter adapter = new OracleDataAdapter(query, LoginUI.con);
-            //DataTable dt = new DataTable();
-            //adapter.Fill(dt);
+            OracleDataAdapter adapter = new OracleDataAdapter(query, conNow);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
 
-            //dataGridView1.DataSource = dt;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

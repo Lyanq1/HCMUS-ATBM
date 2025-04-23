@@ -93,7 +93,7 @@ namespace TestDB
                     if (cmd.ExecuteScalar() != null)
                     {
                         MessageBox.Show("Đăng nhập sinh viên thành công");
-                        GiaoDienSV svForm = new GiaoDienSV(connectionString);
+                        SinhVienUI svForm = new SinhVienUI();
                         svForm.Show();
                         this.Hide();
                     }

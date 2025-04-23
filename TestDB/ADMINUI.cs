@@ -63,20 +63,12 @@ namespace TestDB
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Search for roles")
-            {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Black;
-            }    
+            
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
-            {
-                textBox1.Text = "Search for roles";
-                textBox1.ForeColor = Color.Silver;
-            }
+            
         }
         private void LoadFormIntoPanel(Form form)
         {

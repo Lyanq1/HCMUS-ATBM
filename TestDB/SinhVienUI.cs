@@ -21,5 +21,21 @@ namespace TestDB
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void SinhVienUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabDangKy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
