@@ -204,13 +204,7 @@ TestDB/
 3. **Permissions**: Kiểm tra quyền truy cập file và thư mục
 4. **Network**: Đảm bảo kết nối mạng ổn định với Oracle Database
 
-## Liên Hệ và Hỗ Trợ
-
-Đây là project học tập cho môn ATBM - Đồ án 3. Nếu có thắc mắc về code hoặc chức năng, vui lòng liên hệ với giảng viên hướng dẫn.
-
 ## Phiên Bản
 
 - **Version**: 1.0
-- **Ngày tạo**: 2025
-- **Tác giả**: Sinh viên ATBM
-- **Môn học**: An Toàn Bảo Mật Dữ Liệu Trong Hệ Thống Thông Tin
+- **Ngày tạo**: 03/2025
