@@ -1,6 +1,8 @@
 # ĐỒ ÁN MÔN HỌC - CSC12001 - AN TOÀN VÀ BẢO MẬT DỮ LIỆU TRONG HTTT
 # Hệ Thống Quản Lý Cơ Sở Dữ Liệu Oracle - ATBM 2025
 
+<img width="614" height="320" alt="image" src="https://github.com/user-attachments/assets/cd3685da-dd4f-4c76-aa87-5519172e5dc8" />
+
 ## Tổng Quan
 
 Đây là ứng dụng WinForm được phát triển cho môn học **An Toàn Bảo Mật Dữ Liệu Trong Hệ Thống Thông Tin (ATBM)** 
