@@ -19,6 +19,10 @@
 - **ORM**: Entity Framework 6.5.1
 - **Icons**: FontAwesome.Sharp
 
+## Demo video 
+- Phân hệ 1: https://youtu.be/aFHtfEtechQ?si=JqHmSIZKXzI4YcOL
+- Phân hệ 2: https://youtu.be/bruvBD94hM8?si=K5_OiyGUqXgWf51i
+
 ## Cấu Trúc Dự Án
 
 ### Phân Hệ 1: Quản Trị CSDL Oracle
